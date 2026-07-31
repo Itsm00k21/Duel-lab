@@ -1,0 +1,11 @@
+node_modules
+.next
+.git
+.gitignore
+*.md
+.env*
+data/cache/images
+data/rooms.json
+coverage
+.vscode
+.idea

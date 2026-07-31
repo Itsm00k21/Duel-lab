@@ -1,26 +1,155 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #070b14;
+  --bg-elev: #0e1626;
+  --bg-elev-2: #152038;
+  --line: #243049;
+  --text: #eef3ff;
+  --muted: #93a0bb;
+  --accent: #f5c15d;
+  --accent-2: #6ee7c5;
+  --danger: #fb7185;
+  --ok: #4ade80;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-bg: var(--bg);
+  --color-bg-elev: var(--bg-elev);
+  --color-bg-elev-2: var(--bg-elev-2);
+  --color-line: var(--line);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-danger: var(--danger);
+  --color-ok: var(--ok);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+* {
+  scrollbar-color: #33415f transparent;
+  scrollbar-width: thin;
+}
+
+html,
+body {
+  background: radial-gradient(1200px 600px at 10% -10%, #18284a 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #1a2a22 0%, transparent 40%), var(--bg);
+  color: var(--text);
+  min-height: 100%;
+  min-height: 100dvh;
+  -webkit-tap-highlight-color: transparent;
+  text-size-adjust: 100%;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  outline-color: var(--accent);
+}
+
+@media (max-width: 767px) {
+  input,
+  select,
+  textarea,
+  button {
+    font-size: 16px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.tap-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.card-proxy {
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+    0 8px 18px rgba(0, 0, 0, 0.35);
+  cursor: zoom-in;
+}
+
+.card-viewer {
+  animation: card-viewer-in 160ms ease-out;
+}
+
+.duel-mat {
+  background:
+    radial-gradient(900px 420px at 50% -8%, rgba(36, 90, 120, 0.35), transparent 60%),
+    radial-gradient(700px 500px at 50% 110%, rgba(20, 60, 50, 0.25), transparent 55%),
+    linear-gradient(180deg, #071018 0%, #0a1624 42%, #071018 100%);
+}
+
+.zone-slot {
+  border: 1px solid rgba(180, 210, 230, 0.14);
+  background:
+    radial-gradient(circle at 50% 40%, rgba(80, 130, 160, 0.12), transparent 70%),
+    rgba(4, 10, 18, 0.45);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.zone-slot-emz {
+  border-color: rgba(245, 193, 93, 0.4);
+  background:
+    radial-gradient(circle at 50% 40%, rgba(245, 193, 93, 0.16), transparent 72%),
+    rgba(20, 16, 8, 0.45);
+}
+
+.zone-slot-over {
+  border-color: rgba(245, 193, 93, 0.85);
+  background: rgba(245, 193, 93, 0.16);
+}
+
+.card-back {
+  background:
+    radial-gradient(circle at 30% 20%, #3d5a88, transparent 42%),
+    linear-gradient(165deg, #1a2744 0%, #0c1424 55%, #15243d 100%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+}
+
+.card-back::after {
+  content: "DL";
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.phase-chip {
+  min-width: 2.4rem;
+  border-radius: 999px;
+  padding: 0.35rem 0.55rem;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.phase-chip-on {
+  background: linear-gradient(180deg, #f8d27a, #e0a53a);
+  color: #1a1408;
+  box-shadow: 0 0 16px rgba(245, 193, 93, 0.35);
+}
+
+@keyframes card-viewer-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }

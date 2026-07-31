@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local card cache + live rooms
+/data/cache/
+/data/rooms.json
+.DS_Store

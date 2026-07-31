@@ -1,65 +1,94 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import Link from "next/link";
+import { ArrowRight, Database, Layers3, PlaySquare, StickyNote } from "lucide-react";
+import { useCardStore } from "@/store/useCardStore";
+import { useDeckStore } from "@/store/useDeckStore";
+
+export default function HomePage() {
+  const { cards, meta, syncing, error, syncRemote } = useCardStore();
+  const decks = useDeckStore((s) => s.decks);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="space-y-8">
+      <section className="rounded-2xl border border-line bg-bg-elev p-8">
+        <p className="text-xs uppercase tracking-[0.25em] text-accent">Local playtest foundation</p>
+        <h1 className="mt-2 max-w-2xl text-4xl font-semibold tracking-tight">
+          Build decks. Test lines. No grind, no shop.
+        </h1>
+        <p className="mt-3 max-w-2xl text-muted">
+          Duel Lab is an unofficial local sandbox: every current card cached on your machine, a deck
+          builder, a two-player hotseat playmat, plus chain / PSCT / synergy helpers. Effects still
+          resolve manually — like a paper proxy table with a rules coach.
+        </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <Link
+            href="/decks"
+            className="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-zinc-950"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Open deck builder <ArrowRight size={16} />
+          </Link>
+          <Link
+            href="/play"
+            className="inline-flex items-center gap-2 rounded-lg border border-line bg-bg-elev-2 px-4 py-2 text-sm"
           >
-            Documentation
-          </a>
+            Start local duel
+          </Link>
+          <Link
+            href="/play/room"
+            className="inline-flex items-center gap-2 rounded-lg border border-line bg-bg-elev-2 px-4 py-2 text-sm"
+          >
+            Duel a friend
+          </Link>
+          <button
+            type="button"
+            onClick={() => void syncRemote(true)}
+            className="inline-flex items-center gap-2 rounded-lg border border-line px-4 py-2 text-sm text-muted hover:text-text"
+            disabled={syncing}
+          >
+            {syncing ? "Syncing…" : "Sync card database"}
+          </button>
         </div>
-      </main>
+        {error && <p className="mt-3 text-sm text-danger">{error}</p>}
+      </section>
+
+      <section className="grid gap-4 md:grid-cols-4">
+        {[
+          {
+            icon: Database,
+            title: "Card DB",
+            body: meta
+              ? `${cards.length.toLocaleString()} cards · v${meta.version}`
+              : "Not synced yet",
+          },
+          {
+            icon: Layers3,
+            title: "Decks",
+            body: `${decks.length} saved locally`,
+          },
+          {
+            icon: PlaySquare,
+            title: "Playmat",
+            body: "Hotseat P1/P2 + god view",
+          },
+          {
+            icon: StickyNote,
+            title: "Lab notes",
+            body: "Per-deck notes + session log",
+          },
+        ].map((item) => (
+          <div key={item.title} className="rounded-xl border border-line bg-bg-elev p-4">
+            <item.icon className="text-accent" size={18} />
+            <h2 className="mt-3 font-medium">{item.title}</h2>
+            <p className="text-sm text-muted">{item.body}</p>
+          </div>
+        ))}
+      </section>
+
+      <section className="rounded-xl border border-dashed border-line p-5 text-sm text-muted">
+        Unofficial fan tool for private testing only. Not affiliated with Konami, NAS, or Master Duel.
+        Card data via YGOPRODeck API, cached locally. No official art is bundled.
+      </section>
     </div>
   );
 }

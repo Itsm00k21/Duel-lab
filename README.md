@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Duel Lab
 
-## Getting Started
+Local-first web playtest table for Yu-Gi-Oh **deck testing**. Unofficial fan tool. Not affiliated with Konami, NAS, or Master Duel. No monetization.
 
-First, run the development server:
+## What you get
+
+- Full current card list cached locally (YGOPRODeck API)
+- Master Duel-style deck builder + TCG/MD July 2026 premade meta snapshots
+- Lab notes + `.ydk` import/export
+- Local 2-player **hotseat** playmat (drag cards, LP, phases, dice/coin, tokens, undo)
+- **Chain helper** (Spell Speed, SEGOC, FET boxes, likely activations)
+- **Synergy / PSCT** tabs (what cards name each other, deck gaps)
+- Deck diff + combo sandbox + rules cheat sheet
+- Serializable game state ready for online rooms later
+
+Effects are **manual** on purpose — like paper proxies.
+
+## Run
 
 ```bash
+cd ~/Documents/duel-lab
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+First visit: go to **Settings** or Home → **Sync card database**. The first sync can take a minute.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Shared test link (deploy)
 
-## Learn More
+Testing only — one small always-on box so you and a friend share the same room list.
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# one-time
+curl -L https://fly.io/install.sh | sh
+export FLYCTL_INSTALL="$HOME/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+fly auth login
+cd ~/Documents/duel-lab
+fly launch --copy-config --yes --no-deploy
+fly deploy
+fly apps open
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Then both of you open **`https://duel-lab-test.fly.dev/play/room`** (or the URL `fly apps open` shows). Host creates a room, guest joins with the code.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Stop it when you’re done testing:
 
-## Deploy on Vercel
+```bash
+fly scale count 0
+# or: fly apps destroy duel-lab-test
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Duel a friend (online room)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Rooms already exist: **Play → Duel a friend** (`/play/room`). One of you hosts, the other joins with a 6-letter code. Each person picks their own deck (saved locally or a premade). Coin flip + first/second happens in the room lobby.
+
+**Same Wi‑Fi**
+
+```bash
+npm run dev:lan
+```
+
+On the host Mac, get your LAN IP:
+
+```bash
+ipconfig getifaddr en0
+```
+
+Share `http://YOUR_LAN_IP:3000/play/room`. Friend joins that URL, enters the room code.
+
+**Different networks (easiest)**
+
+Keep `npm run dev` (or `dev:lan`) running, then in another terminal expose port 3000:
+
+```bash
+# Cloudflare (free, no account required for a quick tunnel)
+npx --yes cloudflared tunnel --url http://localhost:3000
+```
+
+or
+
+```bash
+npx --yes localtunnel --port 3000
+```
+
+Send your friend the `https://…` URL + the room code. Both should open **Settings → Sync card database** once before dueling.
+
+Notes:
+
+- Rooms live in the Node process memory — don’t restart `npm run dev` mid-duel.
+- The board syncs about every 0.7s. Search/cost popups run on the player taking the action.
+- This is not matchmaking or a public server; it’s a private room for two browsers.
+
+Card art is matched by **passcode** from YGOPRODeck `card_images` (exact id, then listed alt, never by name). Images are downloaded into `data/cache/images/` on first view. Optional: Settings → Prefetch all small card art.
+
+## Layout
+
+Project lives at `~/Documents/duel-lab` so it stays out of other work.
+
+See `docs/ARCHITECTURE.md` for internals.
+
+## Not in v1
+
+- Automated ruling engine
+- Online matchmaking
+- Official card artwork
+- Ranked / gems / cosmetics

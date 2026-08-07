@@ -2,6 +2,8 @@
 
 This app is a **manual** playtest table with helpers. It does not auto-resolve effects.
 
+**2026-08 audit pack (TCG vs MD + engine + premade coverage):** [docs/reference/README.md](./reference/README.md)
+
 ## Primary references
 
 - [Konami Fast Effect Timing PDF](https://www.yugioh-card.com/ygo_cms/ygo/all/uploads/FastEffectTiming_for_webpage-1.pdf)

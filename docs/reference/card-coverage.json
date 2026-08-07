@@ -1,0 +1,6417 @@
+{
+  "generatedAt": "2026-08-07T14:46:30.858Z",
+  "scope": "Unique names across PREMADE_DECKS only — not the entire card database.",
+  "tally": {
+    "ok": 200,
+    "partial": 130,
+    "gap": 5,
+    "skip": 29,
+    "missing": 0,
+    "total": 364
+  },
+  "cards": [
+    {
+      "name": "\"A Case for K9\"",
+      "id": 80181649,
+      "type": "Spell Card",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "tcgBan": "Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Accel Synchron",
+      "id": 37675907,
+      "type": "Synchro Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: choice-bullets"
+    },
+    {
+      "name": "Accesscode Talker",
+      "id": 86066372,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-maliss",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-sky-striker",
+        "tcg-blitzclique",
+        "tcg-dark-magician-azamina",
+        "md-vs-k9",
+        "md-mitsurugi",
+        "md-snake-eye"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Albion the Branded Dragon",
+      "id": 87746184,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "partial",
+      "textOps": [
+        "fusion-spell"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: trigger + fusion-spell"
+    },
+    {
+      "name": "Albion the Sanctifire Dragon",
+      "id": 38811586,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Allure of Darkness",
+      "id": 1475311,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "mdBan": "Limited",
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Aluber the Jester of Despia",
+      "id": 62962630,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Ame no Habakiri no Mitsurugi",
+      "id": 13332685,
+      "type": "Ritual Effect Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-mitsurugi"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Semi-Limited",
+      "status": "ok",
+      "textOps": [
+        "ritual-summon"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 3,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Ame no Murakumo no Mitsurugi",
+      "id": 19899073,
+      "type": "Ritual Effect Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-mitsurugi"
+      ],
+      "status": "ok",
+      "textOps": [
+        "destroy-multiple",
+        "ritual-summon"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Ariane the Labrynth Servant",
+      "id": 75730490,
+      "type": "Effect Monster",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [
+        "choice-bullets",
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search",
+        "draw"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Arianna the Labrynth Servant",
+      "id": 1225009,
+      "type": "Effect Monster",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [
+        "choice-bullets",
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search",
+        "draw"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Arias the Labrynth Butler",
+      "id": 73602965,
+      "type": "Effect Monster",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: chain responder"
+    },
+    {
+      "name": "Ash Blossom & Joyous Spring",
+      "id": 14558127,
+      "type": "Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-maliss",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-sky-striker",
+        "tcg-blitzclique",
+        "tcg-dark-magician-azamina",
+        "md-branded",
+        "md-kewl-tune",
+        "md-dracotail",
+        "md-vs-k9",
+        "md-yummy",
+        "md-ryzeal",
+        "md-mitsurugi",
+        "md-snake-eye",
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: chain responder"
+    },
+    {
+      "name": "Assist★Yummy!",
+      "id": 86762958,
+      "type": "Trap Card",
+      "decks": [
+        "md-yummy"
+      ],
+      "status": "gap",
+      "textOps": [
+        "return-to-hand"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "gap: Once per turn, during the Standby Phase: You can gain 100 LP, and if you do, your opponent pays 100 "
+    },
+    {
+      "name": "Azamina Ilia Silvia",
+      "id": 46396218,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Azamina Mu Rcielago",
+      "id": 73391962,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Backup @Ignister",
+      "id": 30118811,
+      "type": "Tuner Monster",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Baronne de Fleur",
+      "id": 84815190,
+      "type": "Synchro Monster",
+      "decks": [
+        "md-kewl-tune"
+      ],
+      "tcgBan": "Banned",
+      "status": "gap",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops · gap: Once per turn, during the Standby Phase: You can target 1 Level 9 or lower monster in your GY; retur"
+    },
+    {
+      "name": "Big Welcome Labrynth",
+      "id": 92714517,
+      "type": "Trap Card",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [
+        "return-to-hand"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Blazing Cartesia, the Virtuous",
+      "id": 95515789,
+      "type": "Tuner Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "partial",
+      "textOps": [
+        "fusion-spell"
+      ],
+      "parsedOps": [
+        "fusion-spell"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Blitzclique - Breakaway",
+      "id": 64049762,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-blitzclique"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "return-to-hand",
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: card activation · partial: unhandled choice-bullets"
+    },
+    {
+      "name": "Blitzclique - Steppleader",
+      "id": 433377,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-blitzclique"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Blitzclique Alternator",
+      "id": 59921227,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-blitzclique"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Blitzclique Return Stroke",
+      "id": 23526128,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-blitzclique"
+      ],
+      "status": "partial",
+      "textOps": [
+        "return-to-hand"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Bonfire",
+      "id": 85106525,
+      "type": "Spell Card",
+      "decks": [
+        "md-ryzeal",
+        "md-snake-eye"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Branded Fusion",
+      "id": 44362883,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Semi-Limited",
+      "status": "skip",
+      "textOps": [
+        "fusion-spell"
+      ],
+      "parsedOps": [
+        "fusion-spell"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Branded in High Spirits",
+      "id": 29948294,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "ok",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Branded in Red",
+      "id": 82738008,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "attack-all",
+        "fusion-spell"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Branded Lost",
+      "id": 18973184,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-branded-dracotail"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Branded Opening",
+      "id": 36637374,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 2,
+      "why": ""
+    },
+    {
+      "name": "Branded Retribution",
+      "id": 17751597,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Brightest, Blazing, Branded King",
+      "id": 19271881,
+      "type": "Trap Card",
+      "decks": [
+        "md-branded"
+      ],
+      "status": "ok",
+      "textOps": [
+        "negate-on-field"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Bystial Druiswurm",
+      "id": 6637331,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "tcgBan": "Limited",
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Bystial Magnamhut",
+      "id": 33854624,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Bystial Saronir",
+      "id": 60242223,
+      "type": "Effect Monster",
+      "decks": [
+        "md-branded"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Called by the Grave",
+      "id": 24224830,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-kewl-tune",
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-maliss",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-blitzclique",
+        "md-branded",
+        "md-kewl-tune",
+        "md-dracotail",
+        "md-vs-k9",
+        "md-yummy",
+        "md-ryzeal",
+        "md-mitsurugi",
+        "md-snake-eye",
+        "md-crystron"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Chaos Angel",
+      "id": 22850702,
+      "type": "Synchro Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "tcg-elfnote",
+        "md-kewl-tune",
+        "md-labrynth"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "unaffected"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: Parsed as ignition. · partial: Parsed as ignition."
+    },
+    {
+      "name": "Clockwork Knight",
+      "id": 41739381,
+      "type": "Link Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Cooky★Yummy Way",
+      "id": 67098897,
+      "type": "Synchro Tuner Monster",
+      "decks": [
+        "md-yummy"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Cooky☆Yummy",
+      "id": 68810435,
+      "type": "Effect Monster",
+      "decks": [
+        "md-yummy"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Crackle Blitzclique",
+      "id": 58916810,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-blitzclique"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: chain responder"
+    },
+    {
+      "name": "Cross-Sheep",
+      "id": 50277355,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-yummy",
+        "md-mitsurugi"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [
+        "draw",
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "partial: choice-bullets"
+    },
+    {
+      "name": "Crossout Designator",
+      "id": 65681983,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-kewl-tune",
+        "tcg-dracotail",
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-maliss",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-blitzclique",
+        "md-branded",
+        "md-kewl-tune",
+        "md-dracotail",
+        "md-vs-k9",
+        "md-yummy",
+        "md-ryzeal",
+        "md-mitsurugi",
+        "md-snake-eye",
+        "md-crystron"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "partial",
+      "textOps": [
+        "declare-name",
+        "negate-on-field"
+      ],
+      "parsedOps": [
+        "declare-name"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: unhandled negate-on-field"
+    },
+    {
+      "name": "Crystal Wing Synchro Dragon",
+      "id": 50954680,
+      "type": "Synchro Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Crystron Ametrix",
+      "id": 76359406,
+      "type": "Synchro Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Crystron Citree",
+      "id": 20050865,
+      "type": "Tuner Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Crystron Cluster",
+      "id": 53829527,
+      "type": "Trap Card",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Crystron Eleskeletus",
+      "id": 47736165,
+      "type": "Synchro Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Crystron Entry",
+      "id": 52176579,
+      "type": "Trap Card",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Crystron Impact",
+      "id": 99274184,
+      "type": "Trap Card",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Crystron Inclusion",
+      "id": 31552317,
+      "type": "Spell Card",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Crystron Phoenix",
+      "id": 2743001,
+      "type": "Synchro Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "partial",
+      "textOps": [
+        "banish-multiple"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: trigger + banish-multiple"
+    },
+    {
+      "name": "Crystron Quandax",
+      "id": 39964797,
+      "type": "Synchro Tuner Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Crystron Quariongandrax",
+      "id": 13455674,
+      "type": "Synchro Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Crystron Rosenix",
+      "id": 55326322,
+      "type": "Effect Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "partial",
+      "textOps": [
+        "token"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: MP line no parsed ops · partial: token"
+    },
+    {
+      "name": "Crystron Smiger",
+      "id": 83443619,
+      "type": "Effect Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Crystron Sulfador",
+      "id": 25865565,
+      "type": "Effect Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Crystron Sulfefnir",
+      "id": 3422200,
+      "type": "Effect Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Crystron Thystvern",
+      "id": 29838323,
+      "type": "Effect Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Crystron Tristaros",
+      "id": 99471856,
+      "type": "Tuner Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: chain responder"
+    },
+    {
+      "name": "Cupsy★Yummy Way",
+      "id": 31603289,
+      "type": "Synchro Tuner Monster",
+      "decks": [
+        "md-yummy"
+      ],
+      "tcgBan": "Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Cupsy☆Yummy",
+      "id": 31425736,
+      "type": "Effect Monster",
+      "decks": [
+        "md-yummy"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "draw",
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Cyber Dragon Infinity",
+      "id": 10443958,
+      "type": "XYZ Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Cyber Dragon Nova",
+      "id": 58069384,
+      "type": "XYZ Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Cyberse Wicckid",
+      "id": 52698008,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Dark Magical Circle",
+      "id": 47222536,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [
+        "excavate-top",
+        "damage-step"
+      ],
+      "parsedOps": [
+        "excavate"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Dark Magician",
+      "id": 46986420,
+      "type": "Normal Monster",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "No activated effect text"
+    },
+    {
+      "name": "Dark Magician of Destruction",
+      "id": 59400890,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×2"
+    },
+    {
+      "name": "Deception of the Sinful Spoils",
+      "id": 66328392,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Despian Quaeritis",
+      "id": 72272462,
+      "type": "Fusion Monster",
+      "decks": [
+        "md-branded"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Despian Tragedy",
+      "id": 36577931,
+      "type": "Effect Monster",
+      "decks": [
+        "md-branded"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Dharc the Dark Charmer, Gloomy",
+      "id": 8264361,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-doomz",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-sky-striker",
+        "tcg-blitzclique",
+        "md-snake-eye",
+        "md-labrynth"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Diabellstar the Black Witch",
+      "id": 72270339,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-dark-magician-azamina",
+        "md-snake-eye"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Different Dimension Ground",
+      "id": 31849106,
+      "type": "Trap Card",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Dimensional Barrier",
+      "id": 83326048,
+      "type": "Trap Card",
+      "decks": [
+        "md-labrynth"
+      ],
+      "tcgBan": "Banned",
+      "status": "partial",
+      "textOps": [
+        "negate-on-field"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: unhandled negate-on-field"
+    },
+    {
+      "name": "Divine Arsenal AA-ZEUS - Sky Thunder",
+      "id": 90448279,
+      "type": "XYZ Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-blitzclique",
+        "md-vs-k9",
+        "md-ryzeal",
+        "md-mitsurugi"
+      ],
+      "status": "partial",
+      "textOps": [
+        "xyz-rank-up"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Divine Temple of the Snake-Eye",
+      "id": 53639887,
+      "type": "Spell Card",
+      "decks": [
+        "md-snake-eye"
+      ],
+      "status": "partial",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: card activation · partial: MP line no parsed ops"
+    },
+    {
+      "name": "Dogmatika Punishment",
+      "id": 82956214,
+      "type": "Trap Card",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "DoomZ Break - Diactorus",
+      "id": 31010081,
+      "type": "XYZ Monster",
+      "decks": [
+        "tcg-doomz"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "DoomZ Change",
+      "id": 38007649,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-doomz"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 4,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "DoomZ Command \"A.D.R.A.S.T.E.I.A.\"",
+      "id": 84054556,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-doomz"
+      ],
+      "status": "partial",
+      "textOps": [
+        "attach-equip"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "DoomZ Command \"D.O.O.M.D.U.R.G.\"",
+      "id": 68831625,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-doomz"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "attack-all",
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: choice-bullets"
+    },
+    {
+      "name": "DoomZ Destruction",
+      "id": 80320877,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-doomz"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "attach-equip"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: unhandled attach-equip · partial: trigger + attach-equip"
+    },
+    {
+      "name": "DoomZ Raiders",
+      "id": 32442017,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-doomz"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "DoomZ V Five - Amalthe",
+      "id": 28877382,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-doomz"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 3,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "DoomZ VII Seven - Elara",
+      "id": 54265980,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-doomz"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "DoomZ XII End - Drastrius",
+      "id": 95626382,
+      "type": "XYZ Monster",
+      "decks": [
+        "tcg-doomz"
+      ],
+      "status": "partial",
+      "textOps": [
+        "attach-equip"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: trigger + attach-equip"
+    },
+    {
+      "name": "DoomZ XII Zero - Drastea",
+      "id": 92472273,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-doomz"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "DoomZ XIII Over - Graflareio",
+      "id": 65848113,
+      "type": "XYZ Monster",
+      "decks": [
+        "tcg-doomz"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Dracotail Arthalion",
+      "id": 33760966,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "tcgBan": "Semi-Limited",
+      "status": "ok",
+      "textOps": [
+        "return-to-hand",
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Dracotail Faimena",
+      "id": 1498449,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "status": "ok",
+      "textOps": [
+        "fusion-spell"
+      ],
+      "parsedOps": [
+        "fusion-spell",
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Dracotail Flame",
+      "id": 5431722,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "status": "ok",
+      "textOps": [
+        "place-bottom",
+        "negate-on-field"
+      ],
+      "parsedOps": [
+        "draw",
+        "negate-faceup"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Dracotail Gulamel",
+      "id": 79755671,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Dracotail Horn",
+      "id": 69932023,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "status": "ok",
+      "textOps": [
+        "place-bottom",
+        "return-to-hand"
+      ],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Dracotail Lukias",
+      "id": 75003700,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "tcgBan": "Semi-Limited",
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 3,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Dracotail Mululu",
+      "id": 7375867,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "tcgBan": "Limited",
+      "status": "partial",
+      "textOps": [
+        "negate-on-field",
+        "fusion-spell"
+      ],
+      "parsedOps": [
+        "fusion-spell",
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: trigger + negate-on-field"
+    },
+    {
+      "name": "Dracotail Pan",
+      "id": 44482554,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "status": "ok",
+      "textOps": [
+        "place-bottom",
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Dracotail Phryxul",
+      "id": 84477320,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-dracotail"
+      ],
+      "status": "ok",
+      "textOps": [
+        "return-to-hand"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Dracotail Shaulas",
+      "id": 42125140,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "status": "partial",
+      "textOps": [
+        "shuffle-into-deck",
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Dracotail Sting",
+      "id": 80208225,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "status": "ok",
+      "textOps": [
+        "place-bottom"
+      ],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Dracotail Urgula",
+      "id": 70871153,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "status": "partial",
+      "textOps": [
+        "place-bottom"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Dramaturge of Despia",
+      "id": 99456344,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-branded-dracotail"
+      ],
+      "status": "partial",
+      "textOps": [
+        "negate-on-field",
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: trigger + negate-on-field · partial: MP line no parsed ops"
+    },
+    {
+      "name": "Droll & Lock Bird",
+      "id": 94145021,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-branded",
+        "md-kewl-tune",
+        "md-dracotail",
+        "md-vs-k9",
+        "md-yummy",
+        "md-ryzeal",
+        "md-mitsurugi",
+        "md-snake-eye",
+        "md-crystron"
+      ],
+      "tcgBan": "Semi-Limited",
+      "mdBan": "Semi-Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Duelist Genesis",
+      "id": 97474300,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Dyna Mondo",
+      "id": 73898890,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-mitsurugi"
+      ],
+      "status": "ok",
+      "textOps": [
+        "shuffle-into-deck"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Eclipse Twins",
+      "id": 45852939,
+      "type": "XYZ Monster",
+      "decks": [
+        "md-ryzeal"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Effect Veiler",
+      "id": 97268402,
+      "type": "Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "tcg-dracotail",
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-maliss",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-sky-striker",
+        "tcg-blitzclique",
+        "md-branded",
+        "md-kewl-tune",
+        "md-dracotail",
+        "md-vs-k9",
+        "md-yummy",
+        "md-ryzeal",
+        "md-mitsurugi",
+        "md-snake-eye",
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [
+        "negate-on-field"
+      ],
+      "parsedOps": [
+        "negate-faceup"
+      ],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Elder Entity N'tss",
+      "id": 80532587,
+      "type": "Fusion Monster",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Elfnote Fortuna",
+      "id": 85976588,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-elfnote"
+      ],
+      "status": "partial",
+      "textOps": [
+        "return-to-hand"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Elfnote June Pride",
+      "id": 5559570,
+      "type": "Synchro Monster",
+      "decks": [
+        "tcg-elfnote"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Elfnote Lucina",
+      "id": 13597785,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-elfnote"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Elfnote Power Patron",
+      "id": 12375297,
+      "type": "Tuner Monster",
+      "decks": [
+        "tcg-elfnote"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Elfnote Regina",
+      "id": 56651978,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-elfnote"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 3,
+      "costs": 0,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Elfnote Seraphim Strelitzia",
+      "id": 42302563,
+      "type": "Synchro Monster",
+      "decks": [
+        "tcg-elfnote"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Elfnote Tinia",
+      "id": 59581480,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-elfnote"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Elfnotes: A Plea for Help",
+      "id": 90880453,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-elfnote"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: Lingering Spell effect clickable after the card is face-up. · partial: Lingering Spell effect clickable after the card is face-up. · partial: Lingering Spell effect clickable after the card is face-up."
+    },
+    {
+      "name": "Elfnotes: Aristeia of Trust",
+      "id": 50590801,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-elfnote"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Elfnotes: Quatrain of Succession",
+      "id": 58809685,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-elfnote"
+      ],
+      "status": "partial",
+      "textOps": [
+        "token"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: token"
+    },
+    {
+      "name": "Elfnotes: Rhapsodia of Madness",
+      "id": 24092792,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-elfnote"
+      ],
+      "status": "partial",
+      "textOps": [
+        "negate-on-field"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: negate-on-field"
+    },
+    {
+      "name": "Elfnotes: Welcome Home",
+      "id": 64491754,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-elfnote"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Emi Blitzclique",
+      "id": 11895663,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-blitzclique"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Eternal Soul",
+      "id": 48680970,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "destroy-multiple",
+        "unaffected"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: choice-bullets"
+    },
+    {
+      "name": "Evilswarm Exciton Knight",
+      "id": 46772449,
+      "type": "XYZ Monster",
+      "decks": [
+        "md-ryzeal",
+        "md-mitsurugi"
+      ],
+      "status": "ok",
+      "textOps": [
+        "destroy-multiple"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Ext Ryzeal",
+      "id": 34022970,
+      "type": "Effect Monster",
+      "decks": [
+        "md-ryzeal"
+      ],
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "F.A. Dawn Dragster",
+      "id": 33158448,
+      "type": "Synchro Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Fallen of Albaz",
+      "id": 68468459,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "partial",
+      "textOps": [
+        "fusion-spell",
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: trigger + fusion-spell"
+    },
+    {
+      "name": "Fiendsmith's Requiem",
+      "id": 2463794,
+      "type": "Link Monster",
+      "decks": [
+        "md-snake-eye"
+      ],
+      "status": "partial",
+      "textOps": [
+        "attach-equip"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Fiendsmith's Sequence",
+      "id": 49867899,
+      "type": "Link Monster",
+      "decks": [
+        "md-snake-eye"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "attach-equip",
+        "fusion-spell"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops · partial: MP line no parsed ops"
+    },
+    {
+      "name": "Firewall Dragon",
+      "id": 5043010,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "status": "ok",
+      "textOps": [
+        "return-to-hand"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Foolish Burial",
+      "id": 81439173,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-crystron"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Foolish Burial Goods",
+      "id": 35726888,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "mdBan": "Limited",
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Forbidden Droplet",
+      "id": 24299458,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-kewl-tune",
+        "tcg-dracotail",
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-maliss",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-blitzclique",
+        "tcg-dark-magician-azamina",
+        "md-branded",
+        "md-kewl-tune",
+        "md-dracotail",
+        "md-vs-k9",
+        "md-yummy",
+        "md-ryzeal",
+        "md-mitsurugi",
+        "md-snake-eye",
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "negate-faceup"
+      ],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Formula Synchron",
+      "id": 50091196,
+      "type": "Synchro Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune",
+        "md-yummy",
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Full Armored Utopic Ray Lancer",
+      "id": 1269512,
+      "type": "XYZ Monster",
+      "decks": [
+        "md-ryzeal"
+      ],
+      "status": "partial",
+      "textOps": [
+        "negate-on-field"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 2,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Fusion Deployment",
+      "id": 6498706,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Futsu no Mitama no Mitsurugi",
+      "id": 55397172,
+      "type": "Ritual Effect Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-mitsurugi"
+      ],
+      "status": "partial",
+      "textOps": [
+        "ritual-summon",
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Garura, Wings of Resonant Life",
+      "id": 11765832,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "md-branded",
+        "md-dracotail",
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Ghost Belle & Haunted Mansion",
+      "id": 73642296,
+      "type": "Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: chain responder"
+    },
+    {
+      "name": "Gold Sarcophagus",
+      "id": 75500286,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-maliss",
+        "md-branded"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Golden Cloud Beast - Malong",
+      "id": 93125329,
+      "type": "Synchro Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune"
+      ],
+      "status": "ok",
+      "textOps": [
+        "return-to-hand"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Gozen Match",
+      "id": 53334471,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-radiant-typhoon"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Grain Blitzclique",
+      "id": 84401954,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-blitzclique"
+      ],
+      "status": "partial",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Granguignol the Dusk Dragon",
+      "id": 24915933,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Guardian Chimera",
+      "id": 11321089,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "md-branded",
+        "md-dracotail"
+      ],
+      "status": "ok",
+      "textOps": [
+        "draw-variable",
+        "destroy-multiple"
+      ],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Guiding Quem, the Virtuous",
+      "id": 45883110,
+      "type": "Tuner Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "partial",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Haggard Lizardose",
+      "id": 9763474,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Herald of the Arc Light",
+      "id": 79606837,
+      "type": "Synchro Monster",
+      "decks": [
+        "md-kewl-tune",
+        "md-yummy",
+        "md-crystron"
+      ],
+      "tcgBan": "Banned",
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Heretical Phobos Covos",
+      "id": 76078185,
+      "type": "XYZ Monster",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "partial",
+      "textOps": [
+        "change-control",
+        "negate-on-field"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Hiita the Fire Charmer, Ablaze",
+      "id": 48815792,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-doomz",
+        "tcg-radiant-typhoon",
+        "md-snake-eye"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "I:P Masquerena",
+      "id": 65741786,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "tcg-dracotail",
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-maliss",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-sky-striker",
+        "tcg-blitzclique",
+        "tcg-dark-magician-azamina",
+        "md-kewl-tune",
+        "md-dracotail",
+        "md-vs-k9",
+        "md-yummy",
+        "md-ryzeal",
+        "md-mitsurugi",
+        "md-snake-eye",
+        "md-labrynth",
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Ice Ryzeal",
+      "id": 8633261,
+      "type": "Effect Monster",
+      "decks": [
+        "md-ryzeal"
+      ],
+      "tcgBan": "Semi-Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Illusion of Chaos",
+      "id": 12266229,
+      "type": "Ritual Effect Monster",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [
+        "return-to-hand",
+        "ritual-summon"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 3,
+      "costs": 0,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Infinite Impermanence",
+      "id": 10045474,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-kewl-tune",
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-maliss",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-sky-striker",
+        "tcg-blitzclique",
+        "tcg-dark-magician-azamina",
+        "md-branded",
+        "md-kewl-tune",
+        "md-dracotail",
+        "md-vs-k9",
+        "md-yummy",
+        "md-ryzeal",
+        "md-mitsurugi",
+        "md-snake-eye",
+        "md-labrynth",
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [
+        "negate-on-field"
+      ],
+      "parsedOps": [
+        "negate-faceup"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "JJ \"Kewl Tune\"",
+      "id": 14442329,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Jupredo the Shademachine Power Patron",
+      "id": 43871165,
+      "type": "Pendulum Effect Monster",
+      "decks": [
+        "tcg-doomz"
+      ],
+      "status": "partial",
+      "textOps": [
+        "excavate-top",
+        "banish-multiple"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops · partial: excavate-top,banish-multiple"
+    },
+    {
+      "name": "K9-17 \"Ripper\"",
+      "id": 27420823,
+      "type": "XYZ Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 2,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "K9-17 Izuna",
+      "id": 92248362,
+      "type": "Effect Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "K9-66a Jokul",
+      "id": 28642461,
+      "type": "Effect Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Semi-Limited",
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "K9-66b Lantern",
+      "id": 55031170,
+      "type": "Effect Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "K9-66X \"Jacks\"",
+      "id": 67515699,
+      "type": "XYZ Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "status": "ok",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "K9-LC Release Restraint",
+      "id": 27308231,
+      "type": "Spell Card",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: card activation · partial: MP line no parsed ops"
+    },
+    {
+      "name": "K9-ØØ \"Hound\"",
+      "id": 54919528,
+      "type": "XYZ Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "status": "gap",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "gap: Once per turn, during the Standby Phase: You can detach 1 material from this card, then target 1 car"
+    },
+    {
+      "name": "K9-ØØ Lupis",
+      "id": 91025875,
+      "type": "Effect Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "status": "ok",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "K9-X \"Werewolf\"",
+      "id": 90303227,
+      "type": "XYZ Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "look-reveal-hand"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: Parsed as ignition. · partial: Parsed as ignition."
+    },
+    {
+      "name": "Ketu Dracotail",
+      "id": 6153210,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "tcgBan": "Limited",
+      "status": "skip",
+      "textOps": [
+        "fusion-spell"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Kewl Tune B2B",
+      "id": 65961304,
+      "type": "Synchro Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Kewl Tune Clip",
+      "id": 43904702,
+      "type": "Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Kewl Tune Crackle",
+      "id": 39576656,
+      "type": "Synchro Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "status": "ok",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Kewl Tune Cue",
+      "id": 16387555,
+      "type": "Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "status": "partial",
+      "textOps": [
+        "excavate-top",
+        "place-bottom"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: trigger + excavate-top"
+    },
+    {
+      "name": "Kewl Tune Loudness War",
+      "id": 41069676,
+      "type": "Synchro Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Kewl Tune Mix",
+      "id": 16509007,
+      "type": "Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "mdBan": "Semi-Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Kewl Tune Playlist",
+      "id": 40847034,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "return-to-hand"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Kewl Tune Reco",
+      "id": 89392810,
+      "type": "Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "mdBan": "Semi-Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Kewl Tune Remix",
+      "id": 88170262,
+      "type": "Synchro Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Kewl Tune Rotary",
+      "id": 17209452,
+      "type": "Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "mdBan": "Limited",
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "look-reveal-hand"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops · partial: trigger + choice-bullets"
+    },
+    {
+      "name": "Kewl Tune RS",
+      "id": 15665977,
+      "type": "Synchro Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "status": "ok",
+      "textOps": [
+        "negate-on-field"
+      ],
+      "parsedOps": [
+        "negate-faceup"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Kewl Tune Synchro",
+      "id": 78058681,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Kewl Tune Track Maker",
+      "id": 42781164,
+      "type": "Synchro Tuner Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "status": "ok",
+      "textOps": [
+        "return-to-hand"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Khaos Starsource Dragon",
+      "id": 72578374,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-dracotail"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "King of the Swamp",
+      "id": 79109599,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-dracotail"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Knightmare Phoenix",
+      "id": 2857636,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-blitzclique",
+        "md-mitsurugi",
+        "md-snake-eye"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Knightmare Unicorn",
+      "id": 38342335,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-blitzclique",
+        "md-vs-k9",
+        "md-mitsurugi"
+      ],
+      "status": "ok",
+      "textOps": [
+        "shuffle-into-deck"
+      ],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Labrynth Chandraglier",
+      "id": 37629703,
+      "type": "Effect Monster",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 2,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Labrynth Cooclock",
+      "id": 2511,
+      "type": "Effect Monster",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Labrynth Labyrinth",
+      "id": 33407125,
+      "type": "Spell Card",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [
+        "choice-bullets",
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Labrynth Stovie Torbie",
+      "id": 74018812,
+      "type": "Effect Monster",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 2,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Lady Labrynth of the Silver Castle",
+      "id": 81497285,
+      "type": "Effect Monster",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Linguriboh",
+      "id": 24842059,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 2,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Lollipo★Yummy Way",
+      "id": 93192592,
+      "type": "Synchro Tuner Monster",
+      "decks": [
+        "md-yummy"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Lollipo☆Yummy",
+      "id": 4215180,
+      "type": "Effect Monster",
+      "decks": [
+        "md-yummy"
+      ],
+      "status": "ok",
+      "textOps": [
+        "shuffle-into-deck"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Lovely Labrynth of the Silver Castle",
+      "id": 2347656,
+      "type": "Effect Monster",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "partial",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Lubellion the Searing Dragon",
+      "id": 70534340,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "partial",
+      "textOps": [
+        "fusion-spell"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: trigger + fusion-spell"
+    },
+    {
+      "name": "Lyna the Light Charmer, Lustrous",
+      "id": 9839945,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-elfnote",
+        "tcg-blitzclique"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Magician of Black Chaos MAX",
+      "id": 79613121,
+      "type": "Ritual Effect Monster",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "partial",
+      "textOps": [
+        "ritual-summon"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Magician's Rod",
+      "id": 7084129,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Magician's Salvation",
+      "id": 95477924,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Magicians' Souls",
+      "id": 97631303,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "draw-variable"
+      ],
+      "parsedOps": [
+        "draw",
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "partial: choice-bullets"
+    },
+    {
+      "name": "Maliss <C> GWC-06",
+      "id": 20726052,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Maliss <C> MTP-07",
+      "id": 94722358,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Maliss <C> TB-11",
+      "id": 57111661,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Maliss <P> Chessy Cat",
+      "id": 96676583,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Maliss <P> Dormouse",
+      "id": 32061192,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "mdBan": "Limited",
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Maliss <P> March Hare",
+      "id": 20938824,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Maliss <P> White Rabbit",
+      "id": 69272449,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Maliss <Q> Hearts Crypter",
+      "id": 21848500,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "status": "ok",
+      "textOps": [
+        "shuffle-into-deck"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Maliss <Q> Red Ransom",
+      "id": 68059897,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "mdBan": "Banned",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Maliss <Q> White Binder",
+      "id": 95454996,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search",
+        "draw"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Maliss in the Mirror",
+      "id": 93453053,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Maliss in Underground",
+      "id": 68337209,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "tcgBan": "Semi-Limited",
+      "mdBan": "Limited",
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Marshmao☆Yummy",
+      "id": 10966439,
+      "type": "Effect Monster",
+      "decks": [
+        "md-yummy"
+      ],
+      "mdBan": "Semi-Limited",
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Masquerade the Blazing Dragon",
+      "id": 6855503,
+      "type": "Fusion Monster",
+      "decks": [
+        "md-branded"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Master of Chaos",
+      "id": 85059922,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "partial",
+      "textOps": [
+        "banish-multiple"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: banish-multiple"
+    },
+    {
+      "name": "Maxx \"C\"",
+      "id": 23434538,
+      "type": "Effect Monster",
+      "decks": [
+        "md-branded",
+        "md-kewl-tune",
+        "md-dracotail",
+        "md-vs-k9",
+        "md-yummy",
+        "md-ryzeal",
+        "md-mitsurugi",
+        "md-snake-eye",
+        "md-crystron"
+      ],
+      "tcgBan": "Banned",
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Mereologic Aggregator",
+      "id": 9940036,
+      "type": "XYZ Monster",
+      "decks": [
+        "md-ryzeal"
+      ],
+      "status": "partial",
+      "textOps": [
+        "negate-on-field"
+      ],
+      "parsedOps": [
+        "search",
+        "negate-faceup"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Miasma Necromancer",
+      "id": 69176851,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Mirrorjade the Iceblade Dragon",
+      "id": 44146295,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "ok",
+      "textOps": [
+        "destroy-multiple"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Mitsurugi Great Purification",
+      "id": 17954937,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-mitsurugi"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 3,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Mitsurugi Magatama",
+      "id": 76725398,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-mitsurugi"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "ritual-summon"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: unhandled choice-bullets"
+    },
+    {
+      "name": "Mitsurugi Mirror",
+      "id": 49721684,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-mitsurugi"
+      ],
+      "status": "partial",
+      "textOps": [
+        "shuffle-into-deck",
+        "ritual-summon"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Mitsurugi no Miko, Wousu",
+      "id": 76948970,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-mitsurugi"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Mitsurugi no Mikoto, Aramasa",
+      "id": 40543231,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-mitsurugi"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Mitsurugi no Mikoto, Kusanagi",
+      "id": 82782870,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-mitsurugi"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Mitsurugi no Mikoto, Saji",
+      "id": 18176525,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-mitsurugi"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Mitsurugi Prayers",
+      "id": 45171524,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-mitsurugi"
+      ],
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [
+        "choice-bullets",
+        "attack-all"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Mitsurugi Ritual",
+      "id": 81560239,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-mitsurugi"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "ritual-summon"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Mitsurugi Tempest",
+      "id": 49604192,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-mitsurugi"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Moon of the Closed Heaven",
+      "id": 71818935,
+      "type": "Link Monster",
+      "decks": [
+        "md-dracotail",
+        "md-snake-eye"
+      ],
+      "tcgBan": "Banned",
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Muckraker From the Underworld",
+      "id": 71607202,
+      "type": "Link Monster",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 2,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Mudragon of the Swamp",
+      "id": 54757758,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Mulcharmy Fuwalos",
+      "id": 42141493,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "tcg-dracotail",
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-maliss",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-sky-striker",
+        "tcg-blitzclique",
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [
+        "choice-bullets",
+        "shuffle-into-deck"
+      ],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Necroquip Princess",
+      "id": 93860227,
+      "type": "Fusion Monster",
+      "decks": [
+        "md-snake-eye"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "attach-equip"
+      ],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: trigger + choice-bullets"
+    },
+    {
+      "name": "Nibiru, the Primal Being",
+      "id": 27204311,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-dracotail",
+        "md-branded",
+        "md-kewl-tune",
+        "md-dracotail",
+        "md-vs-k9",
+        "md-yummy",
+        "md-ryzeal",
+        "md-mitsurugi",
+        "md-snake-eye",
+        "md-crystron"
+      ],
+      "status": "partial",
+      "textOps": [
+        "token"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: token"
+    },
+    {
+      "name": "Node Ryzeal",
+      "id": 72238166,
+      "type": "Effect Monster",
+      "decks": [
+        "md-ryzeal"
+      ],
+      "status": "partial",
+      "textOps": [
+        "negate-on-field"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: negate-on-field"
+    },
+    {
+      "name": "Number 41: Bagooska the Terribly Tired Tapir",
+      "id": 90590303,
+      "type": "XYZ Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-blitzclique"
+      ],
+      "mdBan": "Banned",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Number F0: Utopic Draco Future",
+      "id": 26973555,
+      "type": "XYZ Monster",
+      "decks": [
+        "md-vs-k9",
+        "md-ryzeal"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Number F0: Utopic Future",
+      "id": 65305468,
+      "type": "XYZ Monster",
+      "decks": [
+        "md-vs-k9",
+        "md-ryzeal"
+      ],
+      "status": "partial",
+      "textOps": [
+        "change-control",
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "One for One",
+      "id": 2295440,
+      "type": "Spell Card",
+      "decks": [
+        "md-snake-eye"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Original Sinful Spoils - Snake-Eye",
+      "id": 89023486,
+      "type": "Spell Card",
+      "decks": [
+        "md-snake-eye"
+      ],
+      "tcgBan": "Banned",
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [
+        "place-bottom"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Palm Ryzeal",
+      "id": 61116514,
+      "type": "Effect Monster",
+      "decks": [
+        "md-ryzeal"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Platinum Gadget",
+      "id": 40216089,
+      "type": "Link Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Polymerization",
+      "id": 24094653,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "status": "skip",
+      "textOps": [
+        "fusion-spell"
+      ],
+      "parsedOps": [
+        "fusion-spell"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Pot of Desires",
+      "id": 35261759,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-sky-striker",
+        "md-ryzeal"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Pot of Extravagance",
+      "id": 49238328,
+      "type": "Spell Card",
+      "decks": [
+        "md-labrynth"
+      ],
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Pot of Prosperity",
+      "id": 84211599,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Banned",
+      "status": "partial",
+      "textOps": [
+        "excavate-top",
+        "place-bottom"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: unhandled excavate-top"
+    },
+    {
+      "name": "Pre-Preparation of Rites",
+      "id": 13048472,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-mitsurugi"
+      ],
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Predaplant Dragostapelia",
+      "id": 69946549,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "md-branded",
+        "md-dracotail"
+      ],
+      "status": "ok",
+      "textOps": [
+        "counters"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Preparation of Rites",
+      "id": 96729612,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-mitsurugi"
+      ],
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Primite Dragon Ether Beryl",
+      "id": 63198739,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "gap",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "gap: During your Standby Phase, if you have a Normal Monster in your field or GY: You can add this card f"
+    },
+    {
+      "name": "Primite Dragon Nether Berzelius",
+      "id": 26462013,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Primite Drillbeam",
+      "id": 29095457,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "partial",
+      "textOps": [
+        "negate-on-field"
+      ],
+      "parsedOps": [
+        "negate-faceup"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Primite Fusion",
+      "id": 99161253,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [
+        "fusion-spell"
+      ],
+      "parsedOps": [
+        "fusion-spell",
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Primite Lordly Lode",
+      "id": 56506740,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [
+        "declare-name"
+      ],
+      "parsedOps": [
+        "search",
+        "declare-name"
+      ],
+      "searches": 3,
+      "costs": 0,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Primite Roar",
+      "id": 92501449,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [
+        "declare-name"
+      ],
+      "parsedOps": [
+        "declare-name"
+      ],
+      "searches": 1,
+      "costs": 2,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Promethean Princess, Bestower of Flames",
+      "id": 2772337,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-doomz",
+        "tcg-radiant-typhoon",
+        "md-snake-eye"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Qliphort Genius",
+      "id": 22423493,
+      "type": "Link Monster",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "partial",
+      "textOps": [
+        "unaffected"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Radiant Typhoon Ascendance",
+      "id": 25940932,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-radiant-typhoon"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Radiant Typhoon Chant",
+      "id": 67115133,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-radiant-typhoon"
+      ],
+      "tcgBan": "Limited",
+      "status": "partial",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Radiant Typhoon Eldam",
+      "id": 54143349,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-radiant-typhoon"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Radiant Typhoon Fonix, the Great Flame",
+      "id": 85315450,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-radiant-typhoon"
+      ],
+      "status": "ok",
+      "textOps": [
+        "shuffle-into-deck",
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Radiant Typhoon Krosea",
+      "id": 16922142,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-radiant-typhoon"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Radiant Typhoon Mandate",
+      "id": 53813120,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-radiant-typhoon"
+      ],
+      "status": "ok",
+      "textOps": [
+        "choice-bullets",
+        "shuffle-into-deck",
+        "negate-on-field"
+      ],
+      "parsedOps": [
+        "negate-faceup"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Radiant Typhoon Manifestation",
+      "id": 94103142,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-radiant-typhoon"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Radiant Typhoon Meghala",
+      "id": 27755794,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-radiant-typhoon"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Radiant Typhoon Swen",
+      "id": 80538047,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-radiant-typhoon"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Radiant Typhoon Varuroon, the Marine Eidolon",
+      "id": 39341885,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-radiant-typhoon"
+      ],
+      "status": "partial",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Radiant Typhoon Varuroon, the Vibrant Vortex",
+      "id": 53927851,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-radiant-typhoon"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Radiant Typhoon Vision",
+      "id": 20508881,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-radiant-typhoon"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [
+        "draw",
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Rahu Dracotail",
+      "id": 32548318,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-branded-dracotail",
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "skip",
+      "textOps": [
+        "fusion-spell"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Red-Eyes Dark Dragoon",
+      "id": 37818794,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Reinforcement of the Army",
+      "id": 32807846,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Relinquished Anima",
+      "id": 94259633,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-dracotail",
+        "tcg-mitsurugi",
+        "md-dracotail",
+        "md-yummy",
+        "md-mitsurugi",
+        "md-snake-eye",
+        "md-labrynth"
+      ],
+      "status": "partial",
+      "textOps": [
+        "attach-equip"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Rindbrumm the Striking Dragon",
+      "id": 51409648,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "ok",
+      "textOps": [
+        "return-to-hand"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Rivalry of Warlords",
+      "id": 90846359,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-radiant-typhoon"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Rock of the Vanquisher",
+      "id": 28168628,
+      "type": "Link Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "partial: choice-bullets"
+    },
+    {
+      "name": "Ryzeal Detonator",
+      "id": 34909328,
+      "type": "XYZ Monster",
+      "decks": [
+        "md-ryzeal"
+      ],
+      "tcgBan": "Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 2,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Ryzeal Duo Drive",
+      "id": 7511613,
+      "type": "XYZ Monster",
+      "decks": [
+        "md-ryzeal"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Ryzeal Mass Driver",
+      "id": 53276089,
+      "type": "Trap Card",
+      "decks": [
+        "md-ryzeal"
+      ],
+      "status": "ok",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Ryzeal Plasma Hole",
+      "id": 33787730,
+      "type": "Trap Card",
+      "decks": [
+        "md-ryzeal"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Ryzeal Plugin",
+      "id": 60394026,
+      "type": "Spell Card",
+      "decks": [
+        "md-ryzeal"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "S:P Little Knight",
+      "id": 29301450,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "tcg-dracotail",
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-maliss",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-sky-striker",
+        "tcg-blitzclique",
+        "tcg-dark-magician-azamina",
+        "md-kewl-tune",
+        "md-dracotail",
+        "md-vs-k9",
+        "md-yummy",
+        "md-ryzeal",
+        "md-mitsurugi",
+        "md-snake-eye",
+        "md-labrynth",
+        "md-crystron"
+      ],
+      "status": "ok",
+      "textOps": [
+        "attack-all"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Salamangreat Almiraj",
+      "id": 60303245,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-dracotail",
+        "md-yummy",
+        "md-mitsurugi"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Salamangreat Raging Phoenix",
+      "id": 57134592,
+      "type": "Link Monster",
+      "decks": [
+        "md-snake-eye"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Secreterion Dragon",
+      "id": 89851827,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-dracotail",
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "partial",
+      "textOps": [
+        "place-bottom"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Secrets of Dark Magic",
+      "id": 59514116,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "ritual-summon",
+        "fusion-spell"
+      ],
+      "parsedOps": [
+        "fusion-spell",
+        "ritual-spell"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Secure Gardna",
+      "id": 2220237,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "md-dracotail",
+        "md-yummy",
+        "md-mitsurugi",
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Selene, Queen of the Master Magicians",
+      "id": 45819647,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-sky-striker",
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [
+        "counters"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Seventh Tachyon",
+      "id": 7477101,
+      "type": "Spell Card",
+      "decks": [
+        "md-ryzeal"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Skill Drain",
+      "id": 82732705,
+      "type": "Trap Card",
+      "decks": [
+        "md-labrynth"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "skip",
+      "textOps": [
+        "negate-on-field"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Sky Striker Ace - Azalea",
+      "id": 98462037,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "partial",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Sky Striker Ace - Camellia",
+      "id": 63013339,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Sky Striker Ace - Hayate",
+      "id": 8491308,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "ok",
+      "textOps": [
+        "attack-all"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Sky Striker Ace - Kagari",
+      "id": 63288573,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Sky Striker Ace - Kaina",
+      "id": 12421694,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Sky Striker Ace - Raye",
+      "id": 26077387,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Sky Striker Ace - Roze",
+      "id": 37351133,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "partial",
+      "textOps": [
+        "negate-on-field",
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: trigger + negate-on-field"
+    },
+    {
+      "name": "Sky Striker Ace - Shizuku",
+      "id": 90673288,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "gap",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "gap: Once per turn, during the End Phase, if this card was Special Summoned this turn: You can add 1 \"Sky"
+    },
+    {
+      "name": "Sky Striker Ace - Zeke",
+      "id": 75147529,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Sky Striker Maneuver - Afterburners!",
+      "id": 99550630,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Sky Striker Maneuver - Jamming Waves!",
+      "id": 25955749,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Sky Striker Mecha - Eagle Booster",
+      "id": 25733157,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "ok",
+      "textOps": [
+        "unaffected"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: State condition (location/board), not an event — ignition/activation click in Main Phase."
+    },
+    {
+      "name": "Sky Striker Mecha - Hornet Drones",
+      "id": 52340444,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "partial",
+      "textOps": [
+        "token"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: State condition (location/board), not an event — ignition/activation click in Main Phase."
+    },
+    {
+      "name": "Sky Striker Mecha - Shark Cannon",
+      "id": 51227866,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Sky Striker Mecha - Widow Anchor",
+      "id": 98338152,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "partial",
+      "textOps": [
+        "change-control",
+        "negate-on-field"
+      ],
+      "parsedOps": [
+        "negate-faceup"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: change-control"
+    },
+    {
+      "name": "Sky Striker Mecha Modules - Multirole",
+      "id": 24010609,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Sky Striker Mobilize - Engage!",
+      "id": 63166095,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "draw",
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Sky Striker Special Maneuver - Lemnisgate!",
+      "id": 34433770,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "partial",
+      "textOps": [
+        "shuffle-into-deck",
+        "return-to-hand",
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Snake-Eye Ash",
+      "id": 9674034,
+      "type": "Effect Monster",
+      "decks": [
+        "md-snake-eye"
+      ],
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 3,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Snake-Eye Birch",
+      "id": 12058741,
+      "type": "Effect Monster",
+      "decks": [
+        "md-snake-eye"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Snake-Eye Oak",
+      "id": 45663742,
+      "type": "Effect Monster",
+      "decks": [
+        "md-snake-eye"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Snake-Eyes Flamberge Dragon",
+      "id": 48452496,
+      "type": "Effect Monster",
+      "decks": [
+        "md-snake-eye"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Snake-Eyes Poplar",
+      "id": 90241276,
+      "type": "Effect Monster",
+      "decks": [
+        "md-snake-eye"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Solemn Strike",
+      "id": 40605147,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-elfnote",
+        "tcg-sky-striker"
+      ],
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Soul Servant",
+      "id": 23020408,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [
+        "draw-variable"
+      ],
+      "parsedOps": [
+        "search",
+        "draw"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Sprind the Irondash Dragon",
+      "id": 1906812,
+      "type": "Fusion Monster",
+      "decks": [
+        "md-branded"
+      ],
+      "status": "partial",
+      "textOps": [
+        "destroy-multiple"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Springans Kitt",
+      "id": 45484331,
+      "type": "Effect Monster",
+      "decks": [
+        "md-branded"
+      ],
+      "status": "ok",
+      "textOps": [
+        "place-bottom"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Stake your Soul!",
+      "id": 54562327,
+      "type": "Spell Card",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [
+        "return-to-hand"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Star Ryzeal",
+      "id": 84433129,
+      "type": "Effect Monster",
+      "decks": [
+        "md-ryzeal"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Startling Stare of the Snake-Eyes",
+      "id": 74906081,
+      "type": "Trap Card",
+      "decks": [
+        "md-snake-eye"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: unhandled choice-bullets · partial: unhandled choice-bullets"
+    },
+    {
+      "name": "Super Polymerization",
+      "id": 48130397,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-dracotail",
+        "md-dracotail"
+      ],
+      "mdBan": "Semi-Limited",
+      "status": "partial",
+      "textOps": [
+        "fusion-spell"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "partial: unhandled fusion-spell"
+    },
+    {
+      "name": "Super Starslayer TY-PHON - Sky Crisis",
+      "id": 93039339,
+      "type": "XYZ Monster",
+      "decks": [
+        "tcg-kewl-tune",
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-blitzclique",
+        "tcg-dark-magician-azamina",
+        "md-kewl-tune",
+        "md-vs-k9",
+        "md-ryzeal",
+        "md-mitsurugi",
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [
+        "return-to-hand"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Surge Blitzclique",
+      "id": 22912101,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-blitzclique"
+      ],
+      "status": "partial",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Sword Ryzeal",
+      "id": 35844557,
+      "type": "Effect Monster",
+      "decks": [
+        "md-ryzeal"
+      ],
+      "tcgBan": "Semi-Limited",
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Inherent hand SS"
+    },
+    {
+      "name": "Synchro Overtake",
+      "id": 99243014,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-kewl-tune",
+        "md-kewl-tune"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Terraforming",
+      "id": 73628505,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-doomz",
+        "tcg-maliss",
+        "tcg-radiant-typhoon"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Banned",
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "The Bystial Lubellion",
+      "id": 32731036,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-branded-dracotail",
+        "md-branded"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 1,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "The Fallen & The Virtuous",
+      "id": 30271097,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-branded-dracotail"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: card activation · partial: unhandled choice-bullets · partial: State condition (location/board), not an event — ignition/activation click in Main Phase."
+    },
+    {
+      "name": "The Gaze of Timaeus",
+      "id": 22283204,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [
+        "fusion-spell"
+      ],
+      "parsedOps": [
+        "gaze-fusion"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "The Hallowed Azamina",
+      "id": 94845588,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "ok",
+      "textOps": [
+        "shuffle-into-deck"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "There Can Be Only One",
+      "id": 24207889,
+      "type": "Trap Card",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Limited",
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Thunder Dragon Colossus",
+      "id": 15291624,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-blitzclique"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Thunder Dragon Titan",
+      "id": 41685633,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-blitzclique"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Thunder Dragondark",
+      "id": 56713174,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-blitzclique"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 3,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Thunder Dragonhawk",
+      "id": 83107873,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-blitzclique"
+      ],
+      "status": "ok",
+      "textOps": [
+        "shuffle-into-deck"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Thunder Dragonroar",
+      "id": 29596581,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-blitzclique"
+      ],
+      "status": "ok",
+      "textOps": [
+        "return-to-hand"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Timaeus the United Magical Dragon",
+      "id": 85899505,
+      "type": "Fusion Monster",
+      "decks": [
+        "tcg-dark-magician-azamina"
+      ],
+      "status": "partial",
+      "textOps": [
+        "unaffected"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Titaniklad the Ash Dragon",
+      "id": 41373230,
+      "type": "Fusion Monster",
+      "decks": [
+        "md-branded"
+      ],
+      "status": "ok",
+      "textOps": [
+        "unaffected"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Tornado Dragon",
+      "id": 6983839,
+      "type": "XYZ Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "tcg-radiant-typhoon",
+        "tcg-blitzclique",
+        "md-ryzeal",
+        "md-mitsurugi"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Transaction Rollback",
+      "id": 6351147,
+      "type": "Trap Card",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 3,
+      "why": "ok: card activation"
+    },
+    {
+      "name": "Transcode Talker",
+      "id": 46947713,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Trap Trick",
+      "id": 80101899,
+      "type": "Trap Card",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Tri-Brigade Arms Bucephalus II",
+      "id": 10019086,
+      "type": "Link Monster",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "partial",
+      "textOps": [
+        "banish-multiple"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Tri-Brigade Mercourier",
+      "id": 19096726,
+      "type": "Effect Monster",
+      "decks": [
+        "md-branded"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: chain responder"
+    },
+    {
+      "name": "Tuning",
+      "id": 96363153,
+      "type": "Spell Card",
+      "decks": [
+        "md-crystron"
+      ],
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Underworld Goddess of the Closed World",
+      "id": 98127546,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-mitsurugi",
+        "tcg-doomz",
+        "tcg-radiant-typhoon",
+        "tcg-elfnote",
+        "tcg-blitzclique",
+        "md-mitsurugi",
+        "md-labrynth"
+      ],
+      "status": "partial",
+      "textOps": [
+        "unaffected",
+        "negate-on-field"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: trigger + negate-on-field"
+    },
+    {
+      "name": "Update Jammer",
+      "id": 88093706,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-maliss"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Upstart Goblin",
+      "id": 70368879,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-sky-striker"
+      ],
+      "status": "skip",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": ""
+    },
+    {
+      "name": "Vanquish Soul Dr. Mad Love",
+      "id": 29280200,
+      "type": "Effect Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: trigger + choice-bullets · partial: Parsed as ignition. · partial: Parsed as ignition."
+    },
+    {
+      "name": "Vanquish Soul Dust Devil",
+      "id": 91951471,
+      "type": "Spell Card",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "status": "partial",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: card activation"
+    },
+    {
+      "name": "Vanquish Soul Heavy Borger",
+      "id": 92895501,
+      "type": "Effect Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "return-to-hand"
+      ],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: choice-bullets · partial: choice-bullets · partial: Parsed as ignition."
+    },
+    {
+      "name": "Vanquish Soul Hollie Sue",
+      "id": 93156774,
+      "type": "Effect Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "tcgBan": "Limited",
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "change-control"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: choice-bullets · partial: Parsed as ignition. · partial: choice-bullets"
+    },
+    {
+      "name": "Vanquish Soul Jiaolong",
+      "id": 9091064,
+      "type": "Effect Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "mdBan": "Semi-Limited",
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 2,
+      "costs": 0,
+      "why": "partial: choice-bullets · partial: Parsed as ignition. · partial: choice-bullets"
+    },
+    {
+      "name": "Vanquish Soul Pantera",
+      "id": 66401502,
+      "type": "Effect Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "destroy-multiple"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: choice-bullets · partial: Parsed as ignition. · partial: Parsed as ignition."
+    },
+    {
+      "name": "Vanquish Soul Pluton HG",
+      "id": 55688914,
+      "type": "Effect Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: choice-bullets · partial: Parsed as ignition. · partial: Parsed as ignition."
+    },
+    {
+      "name": "Vanquish Soul Razen",
+      "id": 29302858,
+      "type": "Effect Monster",
+      "decks": [
+        "md-vs-k9"
+      ],
+      "mdBan": "Semi-Limited",
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "destroy-multiple"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: trigger + choice-bullets · partial: Parsed as ignition. · partial: Parsed as ignition."
+    },
+    {
+      "name": "WANTED: Seeker of Sinful Spoils",
+      "id": 80845034,
+      "type": "Spell Card",
+      "decks": [
+        "tcg-dark-magician-azamina",
+        "md-snake-eye"
+      ],
+      "mdBan": "Limited",
+      "status": "ok",
+      "textOps": [
+        "place-bottom"
+      ],
+      "parsedOps": [
+        "search",
+        "draw"
+      ],
+      "searches": 1,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Welcome Labrynth",
+      "id": 5380979,
+      "type": "Trap Card",
+      "decks": [
+        "md-labrynth"
+      ],
+      "status": "ok",
+      "textOps": [],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: event trigger"
+    },
+    {
+      "name": "Whisker Blitzclique",
+      "id": 85523502,
+      "type": "Effect Monster",
+      "decks": [
+        "tcg-blitzclique"
+      ],
+      "status": "ok",
+      "textOps": [
+        "return-to-hand"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Worldsea Dragon Zealantis",
+      "id": 45112597,
+      "type": "Link Monster",
+      "decks": [
+        "tcg-radiant-typhoon",
+        "md-snake-eye"
+      ],
+      "status": "partial",
+      "textOps": [
+        "banish-multiple"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops"
+    },
+    {
+      "name": "Yum☆Yum☆Yummys",
+      "id": 56870908,
+      "type": "Spell Card",
+      "decks": [
+        "md-yummy"
+      ],
+      "status": "ok",
+      "textOps": [
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 2,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Yummy★Redemption",
+      "id": 65853758,
+      "type": "Trap Card",
+      "decks": [
+        "md-yummy"
+      ],
+      "status": "ok",
+      "textOps": [
+        "place-bottom"
+      ],
+      "parsedOps": [
+        "draw"
+      ],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: MP/quick"
+    },
+    {
+      "name": "Yummy★Snatchy",
+      "id": 30581601,
+      "type": "Link Monster",
+      "decks": [
+        "md-yummy"
+      ],
+      "tcgBan": "Limited",
+      "mdBan": "Semi-Limited",
+      "status": "ok",
+      "textOps": [
+        "xyz-rank-up"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 1,
+      "why": "ok: Extra summon ×1"
+    },
+    {
+      "name": "Yummy☆Surprise",
+      "id": 29369059,
+      "type": "Spell Card",
+      "decks": [
+        "md-yummy"
+      ],
+      "status": "partial",
+      "textOps": [
+        "choice-bullets",
+        "attack-all",
+        "return-to-hand"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: card activation · partial: unhandled choice-bullets"
+    },
+    {
+      "name": "Yummyusment★Acroquey",
+      "id": 93360904,
+      "type": "Spell Card",
+      "decks": [
+        "md-yummy"
+      ],
+      "status": "partial",
+      "textOps": [
+        "place-bottom",
+        "damage-step"
+      ],
+      "parsedOps": [
+        "search"
+      ],
+      "searches": 1,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops · partial: MP line no parsed ops"
+    },
+    {
+      "name": "Yummyusment☆Mignon",
+      "id": 66975205,
+      "type": "Spell Card",
+      "decks": [
+        "md-yummy"
+      ],
+      "status": "partial",
+      "textOps": [
+        "place-bottom"
+      ],
+      "parsedOps": [],
+      "searches": 0,
+      "costs": 0,
+      "why": "partial: MP line no parsed ops · partial: MP line no parsed ops"
+    }
+  ]
+}

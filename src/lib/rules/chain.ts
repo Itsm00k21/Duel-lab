@@ -161,6 +161,7 @@ export function candidatesForCard(
     inGY?: boolean;
     inBanish?: boolean;
     onField?: boolean;
+    setThisTurn?: boolean;
     setThisTurnUnknown?: boolean;
     turnPlayer: PlayerId;
     phase: string;
@@ -185,9 +186,7 @@ export function candidatesForCard(
     if (ctx.faceDown && ctx.onField && isSpell(card) && !isQuickPlaySpell(card)) {
       allWarn.push("Face-down Normal/Equip/Field/Ritual/Continuous Spells activate by flipping them (usually open game state).");
     }
-    if (ctx.faceDown && ctx.onField && isTrap(card)) {
-      allWarn.push("Traps cannot be activated the turn they are Set. Lab does not track Set turn — confirm manually.");
-    }
+    const trapSetLock = Boolean(ctx.faceDown && ctx.onField && isTrap(card) && ctx.setThisTurn);
     if (ctx.faceDown && ctx.onField && isQuickPlaySpell(card) && ctx.owner === ctx.turnPlayer) {
       allWarn.push("A Quick-Play Spell Set this turn cannot be activated until the next turn.");
     }
@@ -207,8 +206,8 @@ export function candidatesForCard(
       kind,
       summary: clauseSummary(clause, card),
       warnings: allWarn,
-      legal: check.ok,
-      legalityReason: check.reason,
+      legal: trapSetLock ? false : check.ok,
+      legalityReason: trapSetLock ? "Traps cannot be activated the turn they are Set." : check.reason,
     });
   };
 

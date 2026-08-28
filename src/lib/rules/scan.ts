@@ -35,6 +35,7 @@ export function scanActivations(
       inGY: flags.inGY,
       inBanish: flags.inBanish,
       onField: flags.onField,
+      setThisTurn: card.setTurn === state.turn,
       turnPlayer: state.activePlayer,
       phase: state.phase,
       fetBox: state.fetBox,

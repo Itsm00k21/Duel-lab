@@ -166,39 +166,47 @@ function firstEmpty(slots: Array<ZoneCard | null>) {
   return slots.findIndex((s) => s === null);
 }
 
+/** Tokens never occupy piles. Returns false if the card vanished instead of being placed. */
+function sendToPile(state: GameState, owner: PlayerId, zone: PileZone, card: ZoneCard): boolean {
+  if (card.isToken) return false;
+  pileOf(state.players[owner], zone).unshift(card);
+  return true;
+}
+
 function placeCard(state: GameState, ref: ZoneRef, card: ZoneCard) {
   if (ref.owner === "shared") {
     const existing = state.emz[ref.index];
-    if (existing) state.players.p1.gy.unshift(existing);
+    if (existing) sendToPile(state, "p1", "gy", existing);
     state.emz[ref.index] = card;
     return;
   }
   const player = state.players[ref.owner];
   if (ref.zone === "field") {
-    if (player.field) player.gy.unshift(player.field);
+    if (player.field) sendToPile(state, ref.owner, "gy", player.field);
     player.field = card;
     return;
   }
   if (ref.zone === "monster") {
     const i = ref.index >= 0 ? ref.index : firstEmpty(player.monsters);
     if (i < 0) {
-      player.hand.unshift(card);
+      sendToPile(state, ref.owner, "hand", card);
       return;
     }
-    if (player.monsters[i]) player.gy.unshift(player.monsters[i]!);
+    if (player.monsters[i]) sendToPile(state, ref.owner, "gy", player.monsters[i]!);
     player.monsters[i] = card;
     return;
   }
   if (ref.zone === "st") {
     const i = ref.index >= 0 ? ref.index : firstEmpty(player.spells);
     if (i < 0) {
-      player.hand.unshift(card);
+      sendToPile(state, ref.owner, "hand", card);
       return;
     }
-    if (player.spells[i]) player.gy.unshift(player.spells[i]!);
+    if (player.spells[i]) sendToPile(state, ref.owner, "gy", player.spells[i]!);
     player.spells[i] = card;
     return;
   }
+  if (card.isToken) return;
   const pile = pileOf(player, ref.zone);
   if (ref.index === undefined || ref.index <= 0) pile.unshift(card);
   else if (ref.index >= pile.length) pile.push(card);
@@ -356,7 +364,7 @@ export function reduce(prev: GameState, action: GameAction): GameState {
       if (action.to.zone === "deck") card.faceUp = false;
       placeCard(state, action.to, card);
       if (action.to.zone === "st" && card.faceUp === false && card.setTurn == null) card.setTurn = state.turn;
-      if (action.to.zone === "gy") {
+      if (action.to.zone === "gy" && !card.isToken) {
         const who = action.to.owner;
         const controller = action.from.owner === "p1" || action.from.owner === "p2" ? action.from.owner : who;
         state.lastEvent = {
@@ -367,7 +375,7 @@ export function reduce(prev: GameState, action: GameAction): GameState {
           instanceId: card.instanceId,
         };
       }
-      if (action.to.zone === "hand" && (action.from.zone === "deck" || action.from.zone === "extra")) {
+      if (action.to.zone === "hand" && !card.isToken && (action.from.zone === "deck" || action.from.zone === "extra")) {
         const who = action.to.owner;
         state.lastEvent = {
           type: "add-to-hand",
@@ -518,7 +526,7 @@ export function reduce(prev: GameState, action: GameAction): GameState {
         if (tgt) {
           tgt.faceUp = true;
           const owner = action.target.owner === "shared" ? opp : action.target.owner;
-          state.players[owner].gy.unshift(tgt);
+          sendToPile(state, owner, "gy", tgt);
           state.log.unshift(log(state, `Destroyed in battle.`));
         }
       }
@@ -528,7 +536,7 @@ export function reduce(prev: GameState, action: GameAction): GameState {
           const atkCard = takeCard(state, aRef);
           if (atkCard) {
             atkCard.faceUp = true;
-            state.players[aRef.owner].gy.unshift(atkCard);
+            sendToPile(state, aRef.owner, "gy", atkCard);
           }
         }
       }
@@ -700,7 +708,7 @@ export function reduce(prev: GameState, action: GameAction): GameState {
           const piece = takeCard(state, ref);
           if (piece) {
             piece.faceUp = true;
-            state.players[action.player].gy.unshift(piece);
+            sendToPile(state, action.player, "gy", piece);
             state.log.unshift(log(state, `${state.players[action.player].name} discarded ${action.cardName} (cost).`));
           }
         }
@@ -804,7 +812,7 @@ export function reduce(prev: GameState, action: GameAction): GameState {
             const piece = takeCard(state, ref);
             if (piece) {
               piece.faceUp = true;
-              state.players[state.activePlayer].banish.unshift(piece);
+              sendToPile(state, state.activePlayer, "banish", piece);
             }
           }
           state.log.unshift(log(state, `${mon.name ?? id}: effects negated${action.halfAtk ? ", ATK halved" : ""}${action.banish ? ", banished" : ""} until EoT.`));
@@ -819,7 +827,7 @@ export function reduce(prev: GameState, action: GameAction): GameState {
             const piece = takeCard(state, ref);
             if (piece) {
               piece.faceUp = true;
-              state.players[ref.owner].banish.unshift(piece);
+              sendToPile(state, ref.owner, "banish", piece);
             }
           }
           state.log.unshift(log(state, `${mon.name ?? id}: effects negated${action.halfAtk ? ", ATK halved" : ""}${action.banish ? ", banished" : ""} until EoT.`));
@@ -832,7 +840,7 @@ export function reduce(prev: GameState, action: GameAction): GameState {
             const piece = takeCard(state, ref);
             if (piece) {
               piece.faceUp = true;
-              state.players[ref.owner].banish.unshift(piece);
+              sendToPile(state, ref.owner, "banish", piece);
             }
           }
           state.log.unshift(log(state, `${st?.name ?? id}: effects negated${action.banish ? ", banished" : ""} until EoT.`));
@@ -898,10 +906,10 @@ export function reduce(prev: GameState, action: GameAction): GameState {
             else if (action.materialsMode === "banish") {
               piece.faceUp = true;
               const owner = mat.owner === "shared" ? action.player : mat.owner;
-              state.players[owner].banish.unshift(piece);
+              sendToPile(state, owner, "banish", piece);
             } else {
               const owner = mat.owner === "shared" ? action.player : mat.owner;
-              state.players[owner].gy.unshift(piece);
+              sendToPile(state, owner, "gy", piece);
             }
           }
           state.log.unshift(
@@ -932,7 +940,7 @@ export function reduce(prev: GameState, action: GameAction): GameState {
             const mat = takeCard(state, trib);
             if (!mat) continue;
             mat.faceUp = true;
-            player.gy.unshift(mat);
+            sendToPile(state, action.player, "gy", mat);
           }
         }
         const faceUp = action.mode !== "set-monster";
@@ -1052,7 +1060,7 @@ export function reduce(prev: GameState, action: GameAction): GameState {
       const mat = card.overlay.pop()!;
       mat.faceUp = true;
       const owner = action.ref.owner === "shared" ? "p1" : action.ref.owner;
-      state.players[owner].gy.unshift(mat);
+      sendToPile(state, owner, "gy", mat);
       state.log.unshift(log(state, `Detached material from ${card.name ?? card.cardId} to GY.`));
       break;
     }

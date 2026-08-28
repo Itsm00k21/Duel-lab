@@ -16,7 +16,7 @@ import { BoardCard, EmzRow, HandStrip, MonsterRow, SideColumn, SpellRow } from "
 import { PileModal } from "@/components/play/PileModal";
 import { cardKind } from "@/lib/cards/kinds";
 import type { CompactCard } from "@/lib/cards/types";
-import { findCardRef, parseZoneKey, peekCard, reduce } from "@/lib/game/engine";
+import { findCardRef, isFirstTurnStartingPlayer, parseZoneKey, peekCard, reduce } from "@/lib/game/engine";
 import type { GameAction, GameState, PileZone, PlayerId, ZoneCard } from "@/lib/game/types";
 import { activationOptions, type ActLoc, type ActivationOption } from "@/lib/rules/activationWindow";
 import { collectLegalResponses } from "@/lib/rules/legalResponses";
@@ -1941,6 +1941,7 @@ export function Playmat() {
   const phases: GameState["phase"][] = ["DP", "SP", "M1", "BP", "M2", "EP"];
   const openPile = pile ? state.players[pile.owner][pile.zone] : [];
   const botActing = Boolean(state.pve && state.activePlayer === state.pve.bot && !online.active);
+  const noT1Battle = isFirstTurnStartingPlayer(state);
 
   return (
     <div className="duel-mat min-h-[100dvh] pb-[calc(4.5rem+env(safe-area-inset-bottom))] text-text md:pb-0">
@@ -1959,12 +1960,13 @@ export function Playmat() {
             <button
               key={phase}
               type="button"
-              disabled={botActing}
+              disabled={botActing || (phase === "BP" && noT1Battle)}
               onClick={() => {
                 if (botActing || phase === state.phase) return;
+                if (phase === "BP" && isFirstTurnStartingPlayer(state)) return;
                 act({ type: phases.indexOf(phase) < phases.indexOf(state.phase) ? "PREV_PHASE" : "NEXT_PHASE" });
               }}
-              className={cn("phase-chip", state.phase === phase && "phase-chip-on", botActing && "opacity-40")}
+              className={cn("phase-chip", state.phase === phase && "phase-chip-on", (botActing || (phase === "BP" && noT1Battle)) && "opacity-40")}
             >
               {phase}
             </button>

@@ -1,6 +1,6 @@
 import type { CompactCard } from "@/lib/cards/types";
 import type { GameAction, GameState, PlayerId, ZoneCard } from "@/lib/game/types";
-import { findCardRef } from "@/lib/game/engine";
+import { findCardRef, isFirstTurnStartingPlayer } from "@/lib/game/engine";
 
 function other(id: PlayerId): PlayerId {
   return id === "p1" ? "p2" : "p1";
@@ -21,7 +21,7 @@ export function monsterDef(card: ZoneCard, data?: CompactCard) {
 export function canDeclareAttack(state: GameState, player: PlayerId, card: ZoneCard) {
   if (state.phase !== "BP") return false;
   if (state.activePlayer !== player) return false;
-  if (state.turn === 1 && state.activePlayer === state.startingPlayer) return false;
+  if (isFirstTurnStartingPlayer(state)) return false;
   if (!card.faceUp || card.position !== "atk") return false;
   if (state.attackedThisTurn.includes(card.instanceId)) return false;
   return true;

@@ -22,6 +22,13 @@ import type {
 
 const PHASES: Phase[] = ["DP", "SP", "M1", "BP", "M2", "EP"];
 
+/** Rulebook v10 p.38: the player who goes first cannot conduct a Battle Phase on turn 1. */
+export function isFirstTurnStartingPlayer(state: GameState): boolean {
+  return state.turn === 1 && state.activePlayer === state.startingPlayer;
+}
+
+const NO_T1_BATTLE = "The player who goes first cannot conduct a Battle Phase on their first turn.";
+
 function shuffleInPlace<T>(items: T[]) {
   for (let i = items.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -444,13 +451,24 @@ export function reduce(prev: GameState, action: GameAction): GameState {
       if (i >= PHASES.length - 1) {
         return reduce(state, { type: "NEXT_TURN" });
       }
-      state.phase = PHASES[i + 1];
+      let next = PHASES[i + 1]!;
+      if (next === "BP" && isFirstTurnStartingPlayer(state)) {
+        next = "M2";
+        state.log.unshift(log(state, NO_T1_BATTLE));
+      }
+      state.phase = next;
       state.log.unshift(log(state, `Phase → ${state.phase}.`));
       break;
     }
     case "PREV_PHASE": {
       const i = PHASES.indexOf(state.phase);
-      if (i > 0) state.phase = PHASES[i - 1];
+      if (i <= 0) break;
+      let prev = PHASES[i - 1]!;
+      if (prev === "BP" && isFirstTurnStartingPlayer(state)) {
+        prev = "M1";
+        state.log.unshift(log(state, NO_T1_BATTLE));
+      }
+      state.phase = prev;
       break;
     }
     case "NEXT_TURN": {
@@ -498,7 +516,7 @@ export function reduce(prev: GameState, action: GameAction): GameState {
         state.log.unshift(log(state, "Attacks can only be declared in the Battle Phase."));
         break;
       }
-      if (state.turn === 1 && state.activePlayer === state.startingPlayer) {
+      if (isFirstTurnStartingPlayer(state)) {
         state.log.unshift(log(state, "Cannot attack on the first turn of the duel."));
         break;
       }
@@ -1096,6 +1114,11 @@ export function reduce(prev: GameState, action: GameAction): GameState {
     }
     default:
       break;
+  }
+
+  if (isFirstTurnStartingPlayer(state) && state.phase === "BP") {
+    state.phase = "M2";
+    state.log.unshift(log(state, NO_T1_BATTLE));
   }
 
   state.log = state.log.slice(0, 200);

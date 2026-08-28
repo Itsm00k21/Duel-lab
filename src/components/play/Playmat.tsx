@@ -1,6 +1,6 @@
 "use client";
 
-import { DndContext, DragOverlay, MouseSensor, TouchSensor, useSensor, useSensors, type DragEndEvent, type DragStartEvent } from "@dnd-kit/core";
+import { DndContext, DragOverlay, MouseSensor, TouchSensor, pointerWithin, useSensor, useSensors, type DragEndEvent, type DragStartEvent } from "@dnd-kit/core";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useDuelBot } from "@/components/play/useDuelBot";
@@ -2003,6 +2003,11 @@ export function Playmat() {
         >
           End
         </button>
+        {state.log[0] && (
+          <div className="min-w-0 max-w-[min(28rem,40vw)] truncate text-[11px] text-amber-100/75" title={state.log[0].text}>
+            {state.log[0].text}
+          </div>
+        )}
         <div className="hidden flex-wrap items-center gap-2 md:flex">
           <button className="rounded-lg bg-white/5 px-2 py-1" onClick={() => act({ type: "DRAW", player: self }, { type: "draw", player: self, controller: self })}>
             Draw
@@ -2080,7 +2085,7 @@ export function Playmat() {
         </span>
       </header>
 
-      <DndContext sensors={sensors} onDragStart={onDragStart} onDragEnd={onDragEnd}>
+      <DndContext sensors={sensors} collisionDetection={pointerWithin} onDragStart={onDragStart} onDragEnd={onDragEnd}>
         <div className={cn("grid gap-3 p-2 xl:grid-cols-[1fr_320px]", !showChain && "xl:grid-cols-1")}>
           <div className="mx-auto w-full max-w-5xl">
             <div className="mb-1 flex items-center justify-between px-2">

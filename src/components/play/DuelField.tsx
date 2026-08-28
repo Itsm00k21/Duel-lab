@@ -253,10 +253,16 @@ export function SideColumn({
           <div className="zone-slot grid h-16 w-[3.9rem] place-items-center text-[9px] text-white/30">Field</div>
         )}
       </div>
-      <div ref={self ? gyDrop.setNodeRef : undefined} className={cn(self && gyDrop.isOver && "rounded-xl ring-1 ring-amber-300")}>
+      <div
+        ref={self ? gyDrop.setNodeRef : undefined}
+        className={cn("min-h-[5.5rem] rounded-xl p-0.5", self && gyDrop.isOver && "ring-1 ring-amber-300")}
+      >
         {pileBtn("gy", "GY", p.gy.length, p.gy[0], false)}
       </div>
-      <div ref={self ? banDrop.setNodeRef : undefined} className={cn(self && banDrop.isOver && "rounded-xl ring-1 ring-amber-300")}>
+      <div
+        ref={self ? banDrop.setNodeRef : undefined}
+        className={cn("min-h-[5.5rem] rounded-xl p-0.5", self && banDrop.isOver && "ring-1 ring-amber-300")}
+      >
         {pileBtn("banish", "Ban", p.banish.length, p.banish[0], !p.banish[0]?.faceUp)}
       </div>
       {pileBtn("deck", "Deck", p.deck.length, p.deck[0], true)}

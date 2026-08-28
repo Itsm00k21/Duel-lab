@@ -232,6 +232,8 @@ export function SideColumn({
   );
 
   const fieldDrop = useDroppable({ id: zoneKey({ owner, zone: "field" }) });
+  const gyDrop = useDroppable({ id: zoneKey({ owner, zone: "gy" }) });
+  const banDrop = useDroppable({ id: zoneKey({ owner, zone: "banish" }) });
 
   const stack = (
     <>
@@ -251,8 +253,18 @@ export function SideColumn({
           <div className="zone-slot grid h-16 w-[3.9rem] place-items-center text-[9px] text-white/30">Field</div>
         )}
       </div>
-      {pileBtn("gy", "GY", p.gy.length, p.gy[0], false)}
-      {pileBtn("banish", "Ban", p.banish.length, p.banish[0], !p.banish[0]?.faceUp)}
+      <div
+        ref={self ? gyDrop.setNodeRef : undefined}
+        className={cn("min-h-[5.5rem] rounded-xl p-0.5", self && gyDrop.isOver && "ring-1 ring-amber-300")}
+      >
+        {pileBtn("gy", "GY", p.gy.length, p.gy[0], false)}
+      </div>
+      <div
+        ref={self ? banDrop.setNodeRef : undefined}
+        className={cn("min-h-[5.5rem] rounded-xl p-0.5", self && banDrop.isOver && "ring-1 ring-amber-300")}
+      >
+        {pileBtn("banish", "Ban", p.banish.length, p.banish[0], !p.banish[0]?.faceUp)}
+      </div>
       {pileBtn("deck", "Deck", p.deck.length, p.deck[0], true)}
     </>
   );

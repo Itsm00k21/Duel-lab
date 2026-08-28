@@ -142,7 +142,9 @@ export function CardActionMenu({
   }
 
   const move: Item[] = [];
-  /* No free To GY / Banish / To hand — only effects, costs, battle, tribute, materials. */
+  if (where === "field" || where === "st") {
+    move.push({ id: "to-gy", label: "To GY" }, { id: "to-banish", label: "To Banish" });
+  }
 
   const left = Math.min(Math.max(8, x), typeof window !== "undefined" ? window.innerWidth - 280 : x);
   const top = Math.min(Math.max(8, y), typeof window !== "undefined" ? window.innerHeight - 460 : y);

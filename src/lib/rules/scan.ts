@@ -107,3 +107,14 @@ export function scanActivations(
 
   return out.sort((a, b) => Number(b.legal) - Number(a.legal) || a.spellSpeed - b.spellSpeed || a.cardName.localeCompare(b.cardName));
 }
+
+/** One OK/NO row per card + zone (Live scan). Prefers a legal clause when both exist. */
+export function dedupeActivationScan(rows: ActivationCandidate[]): ActivationCandidate[] {
+  const byKey = new Map<string, ActivationCandidate>();
+  for (const row of rows) {
+    const key = `${row.instanceId ?? row.cardId}:${row.zoneLabel}`;
+    const prev = byKey.get(key);
+    if (!prev || (row.legal && !prev.legal)) byKey.set(key, row);
+  }
+  return [...byKey.values()];
+}

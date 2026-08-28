@@ -55,7 +55,7 @@ import {
   type CostSpec,
 } from "@/lib/rules/activationCost";
 import { cardActivationSpeed, isMonster, isQuickPlaySpell, isSpell, isTrap, maxSpellSpeed, parseCard } from "@/lib/rules/psct";
-import { scanActivations } from "@/lib/rules/scan";
+import { scanActivations, dedupeActivationScan } from "@/lib/rules/scan";
 import { explainActivationDenial, mergeTraces, recordTrace, subscribeTraces } from "@/lib/rules/activationDebug";
 import { getBotThoughts, subscribeBotThoughts } from "@/lib/bot/thought";
 import { buildEffectUse, isCardActivationTrigger, optNameKey } from "@/lib/rules/effectOpt";
@@ -1406,7 +1406,7 @@ export function Playmat() {
 
   const debugScan = useMemo(() => {
     if (!state || !rulesDebug) return [];
-    return scanActivations(state, byId).slice(0, 24);
+    return dedupeActivationScan(scanActivations(state, byId)).slice(0, 24);
   }, [state, byId, rulesDebug]);
 
   const [traceTick, setTraceTick] = useState(0);
@@ -1732,14 +1732,14 @@ export function Playmat() {
     if (action === "rotate" && ref) dispatch({ type: "ROTATE", ref });
     if (action === "to-gy") {
       act(
-        { type: "MOVE", from: ref, to: { owner, zone: "gy" }, faceUp: true, manual: true, player: self },
-        { type: "sent-gy", player: owner, cardId: card.cardId },
+        { type: "MOVE", from: ref, to: { owner, zone: "gy" }, faceUp: true },
+        { type: "sent-gy", player: owner, controller: owner, cardId: card.cardId, instanceId: card.instanceId },
       );
     }
     if (action === "to-banish") {
       act(
-        { type: "MOVE", from: ref, to: { owner, zone: "banish" }, faceUp: true, manual: true, player: self },
-        { type: "banish", player: owner, cardId: card.cardId },
+        { type: "MOVE", from: ref, to: { owner, zone: "banish" }, faceUp: true },
+        { type: "banish", player: owner, controller: owner, cardId: card.cardId, instanceId: card.instanceId },
       );
     }
     if (action === "to-hand") {
@@ -1792,6 +1792,20 @@ export function Playmat() {
       const target = state.players[to.owner].monsters[to.index ?? -1];
       executeAttack(dragged, target ?? null);
       return;
+    }
+    if (
+      from.zone === "monster" &&
+      to.zone === "monster" &&
+      from.owner === to.owner &&
+      from.owner !== "shared" &&
+      to.owner !== "shared" &&
+      from.index !== to.index
+    ) {
+      const sitting = state.players[to.owner].monsters[to.index ?? -1];
+      if (sitting) {
+        act({ type: "OVERLAY", from, onto: to });
+        return;
+      }
     }
     if (fromHand && to.zone === "monster") {
       if (to.owner !== self) return;
@@ -1924,18 +1938,21 @@ export function Playmat() {
       }
       return;
     }
+    if ((to.zone === "gy" || to.zone === "banish") && to.owner !== "shared") {
+      if (from.owner !== self && from.owner !== "shared") return;
+      if (to.owner !== self) return;
+      const dest = { owner: to.owner, zone: to.zone } as const;
+      act(
+        { type: "MOVE", from, to: dest, faceUp: true },
+        to.zone === "gy"
+          ? { type: "sent-gy", player: self, controller: self, cardId: dragged.cardId, instanceId: dragged.instanceId }
+          : { type: "banish", player: self, controller: self, cardId: dragged.cardId, instanceId: dragged.instanceId },
+      );
+      return;
+    }
     const legal = isLegalManualMove(state, self, from, to);
     if (!legal.ok) return;
-    const toGy = to.zone === "gy";
-    const toBan = to.zone === "banish";
-    act(
-      { type: "MOVE", from, to, manual: true, player: self },
-      toGy
-        ? { type: "sent-gy", player: self, controller: self, cardId: dragged.cardId, instanceId: dragged.instanceId }
-        : toBan
-          ? { type: "banish", player: self, controller: self, cardId: dragged.cardId, instanceId: dragged.instanceId }
-          : undefined,
-    );
+    act({ type: "MOVE", from, to, manual: true, player: self });
   }
 
   const phases: GameState["phase"][] = ["DP", "SP", "M1", "BP", "M2", "EP"];
@@ -3025,8 +3042,8 @@ export function Playmat() {
           </ul>
           <div className="mt-2 font-semibold text-sky-200/80">Live scan</div>
           <ul className="mt-1 space-y-1">
-            {debugScan.map((row, i) => (
-              <li key={`${row.instanceId}-${row.clauseIndex}-${i}`} className={row.legal ? "text-emerald-200/90" : "text-white/45"}>
+            {debugScan.map((row) => (
+              <li key={`${row.instanceId}-${row.zoneLabel}`} className={row.legal ? "text-emerald-200/90" : "text-white/45"}>
                 <span className="font-medium">{row.legal ? "OK" : "NO"}</span> {row.cardName} · {row.zoneLabel}
                 <div className="text-white/40">{row.legalityReason}</div>
               </li>

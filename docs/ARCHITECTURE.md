@@ -1,6 +1,6 @@
 # Duel Lab architecture
 
-Local-first playtest app. Online rooms are not implemented yet; the game model is ready for them.
+Local-first playtest app. Online rooms exist as an in-memory Node store (`src/lib/multiplayer/`, `/play/room`, 6-letter codes, board poll, fog-of-war sanitize). Not matchmaking. Not a persistent lobby.
 
 ## Folders
 
@@ -9,7 +9,7 @@ src/
   app/                 Next.js routes + API
     api/cards/         YGOPRODeck proxy + disk cache
     decks/             Deck list + editor
-    play/              Setup + table
+    play/              Setup + table + rooms
     lab/               Diff + combo sandbox
     settings/
   components/
@@ -18,6 +18,7 @@ src/
     deck/              Formats, .ydk, validation
     game/              Pure GameState + reducer (MP foundation)
     rules/             PSCT parse, Spell Speed, chain, FET scan
+    multiplayer/       In-memory room store + sanitize
     synergy/           Quote/archetype graph + staple roles
     db/                IndexedDB (Dexie)
   store/               Zustand stores
@@ -40,7 +41,7 @@ docs/
 - phases, LP, log, notes, view mode
 - `reduce(state, action)` is the only mutator
 
-Later, a socket room can broadcast `GameAction` values and keep one reducer on the server or in each client.
+Rooms broadcast `GameAction` values against that reducer. Store is in-memory (process-local), not a durable match server.
 
 ## Legal posture
 

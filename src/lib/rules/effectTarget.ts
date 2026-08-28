@@ -1,5 +1,6 @@
 import type { CompactCard } from "@/lib/cards/types";
 import type { GameState, PlayerId, ZoneCard, ZoneRef } from "@/lib/game/types";
+import { isTokenNormalMonster } from "./summonRules";
 
 export type EffectTargetKind = "opp-monster" | "opp-effect-monster" | "any-face-up-monster";
 
@@ -10,9 +11,11 @@ export type EffectTargetSpec = {
   label: string;
 };
 
-function isEffectMonster(data?: CompactCard) {
+function isEffectMonster(data?: CompactCard, card?: ZoneCard) {
+  if (card && isTokenNormalMonster(card)) return false;
   if (!data) return false;
-  const t = data.type.toLowerCase();
+  const t = `${data.type} ${data.frameType ?? ""}`.toLowerCase();
+  if (/\btoken\b/.test(t)) return false;
   if (!t.includes("monster")) return false;
   if (/\bnormal\b/.test(t) && !/\beffect\b/.test(t)) return false;
   return true;
@@ -63,7 +66,7 @@ export function effectTargetCandidates(
   const consider = (card: ZoneCard | null | undefined, controller: PlayerId | "shared", zone: "monster" | "emz", index: number) => {
     if (!card || (spec.faceUp && !card.faceUp)) return;
     const data = byId.get(card.cardId);
-    if (spec.kind === "opp-effect-monster" && !isEffectMonster(data)) return;
+    if (spec.kind === "opp-effect-monster" && !isEffectMonster(data, card)) return;
     const ref: ZoneRef =
       zone === "emz"
         ? { owner: "shared", zone: "emz", index: index === 0 ? 0 : 1 }

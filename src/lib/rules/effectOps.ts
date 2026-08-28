@@ -299,7 +299,8 @@ export function isSpellOrTrap(data: CompactCard) {
 
 export function isEffectMonsterCard(data?: CompactCard) {
   if (!data || !isMonster(data)) return false;
-  const t = data.type.toLowerCase();
+  const t = `${data.type} ${data.frameType ?? ""}`.toLowerCase();
+  if (/\btoken\b/.test(t)) return false;
   if (/\bnormal\b/.test(t) && !/\beffect\b/.test(t)) return false;
   return true;
 }

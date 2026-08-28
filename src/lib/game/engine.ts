@@ -2,7 +2,7 @@ import { nanoid } from "nanoid";
 import { FORMATS } from "@/lib/deck/formats";
 import type { DeckList } from "@/lib/deck/types";
 import { EMPTY_CHAIN, otherPlayer } from "@/lib/rules/chain";
-import { canNormalSummonOrSet } from "@/lib/rules/summonRules";
+import { canNormalSummonOrSet, isTokenNormalMonster } from "@/lib/rules/summonRules";
 import { optNameKey } from "@/lib/rules/effectOpt";
 import { isLegalManualMove } from "@/lib/rules/moveLegality";
 import { recordTrace, traceLine, type ActivationTrace } from "@/lib/rules/activationDebug";
@@ -890,6 +890,11 @@ export function reduce(prev: GameState, action: GameAction): GameState {
         if (material) placeCard(state, action.from, material);
         break;
       }
+      if (isTokenNormalMonster(material)) {
+        placeCard(state, action.from, material);
+        state.log.unshift(log(state, "Tokens cannot be used as Xyz Material."));
+        break;
+      }
       target.overlay.push(material);
       state.log.unshift(log(state, `Attached material to ${target.name ?? target.cardId}.`));
       break;
@@ -920,8 +925,14 @@ export function reduce(prev: GameState, action: GameAction): GameState {
             const piece = takeCard(state, mat);
             if (!piece) continue;
             piece.faceUp = true;
-            if (action.materialsMode === "overlay") overlay.push(piece);
-            else if (action.materialsMode === "banish") {
+            if (action.materialsMode === "overlay") {
+              if (isTokenNormalMonster(piece)) {
+                placeCard(state, mat, piece);
+                state.log.unshift(log(state, "Tokens cannot be used as Xyz Material."));
+                continue;
+              }
+              overlay.push(piece);
+            } else if (action.materialsMode === "banish") {
               piece.faceUp = true;
               const owner = mat.owner === "shared" ? action.player : mat.owner;
               sendToPile(state, owner, "banish", piece);

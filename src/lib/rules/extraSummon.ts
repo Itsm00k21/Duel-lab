@@ -2,6 +2,7 @@ import type { CompactCard } from "@/lib/cards/types";
 import { cardKind } from "@/lib/cards/kinds";
 import type { GameState, PlayerId, ZoneCard, ZoneRef } from "@/lib/game/types";
 import { extractQuotes, isSpell } from "./psct";
+import { isTokenNormalMonster } from "./summonRules";
 
 export type ExtraSummonSpec = {
   kind: "link" | "synchro" | "xyz" | "fusion";
@@ -46,7 +47,9 @@ function isTuner(data: CompactCard) {
   return data.type.toLowerCase().includes("tuner");
 }
 
-function isEffectMonster(data: CompactCard) {
+function isEffectMonster(data: CompactCard, card?: ZoneCard) {
+  if (card && isTokenNormalMonster(card)) return false;
+  if (/\btoken\b/.test(`${data.type} ${data.frameType ?? ""}`.toLowerCase())) return false;
   const t = data.type.toLowerCase();
   if (t.includes("normal") && !t.includes("effect")) return false;
   return (
@@ -230,11 +233,11 @@ export function extraMaterialCandidates(
       out.push({ card, data, ref: { owner, zone: "hand", index }, where: "Hand" });
     });
   }
-  return out.filter((row) => candidateMatches(row.data, spec));
+  return out.filter((row) => candidateMatches(row.card, row.data, spec));
 }
 
-function candidateMatches(data: CompactCard, spec: ExtraSummonSpec): boolean {
-  if (spec.needEffect && !isEffectMonster(data)) return false;
+function candidateMatches(card: ZoneCard, data: CompactCard, spec: ExtraSummonSpec): boolean {
+  if (spec.needEffect && !isEffectMonster(data, card)) return false;
   if (spec.levelMin != null && (data.level ?? 0) < spec.levelMin) return false;
   if (spec.attribute && (data.attribute ?? "").toUpperCase() !== spec.attribute.toUpperCase()) return false;
   if (spec.raceHard && (data.race ?? "").toLowerCase() !== spec.raceHard.toLowerCase()) return false;
@@ -319,7 +322,14 @@ export function validateExtraMaterials(
     if (sum !== spec.level) return { ok: false, reason: `Levels must equal ${spec.level} (have ${sum}).` };
   }
 
+  if (spec.needEffect && picks.some((p) => !isEffectMonster(p.data, p.card))) {
+    return { ok: false, reason: "Need Effect Monster materials." };
+  }
+
   if (spec.kind === "xyz") {
+    if (picks.some((p) => isTokenNormalMonster(p.card))) {
+      return { ok: false, reason: "Tokens cannot be used as Xyz Material." };
+    }
     if (!picks.every((p) => (p.data.level ?? -1) === spec.rank && !isExtraType(p.data))) {
       return { ok: false, reason: `Need Level ${spec.rank} non-Extra monsters.` };
     }

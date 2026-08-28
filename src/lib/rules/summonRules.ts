@@ -14,6 +14,11 @@ export function canNormalSummonOrSet(state: GameState, player: PlayerId): boolea
   return remainingNormalSummons(state, player) > 0;
 }
 
+/** Rulebook v10 p.48–49: Tokens on the field are treated as Normal Monsters (never Effect). */
+export function isTokenNormalMonster(card: ZoneCard | null | undefined): boolean {
+  return Boolean(card?.isToken);
+}
+
 export function isExtraDeckMonster(card: CompactCard): boolean {
   return isExtraKind(cardKind(card));
 }

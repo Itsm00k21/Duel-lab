@@ -1,6 +1,7 @@
 import type { CompactCard } from "@/lib/cards/types";
 import type { GameState, PlayerId, ZoneCard } from "@/lib/game/types";
 import { type ParsedClause } from "./psct";
+import { isTokenNormalMonster } from "./summonRules";
 
 type ActLoc = "hand" | "field" | "st" | "gy" | "banish" | "extra" | "deck";
 
@@ -22,9 +23,11 @@ function isNormalMonster(data?: CompactCard) {
   return t.includes("monster") && /\bnormal\b/.test(t) && !/\beffect\b/.test(t);
 }
 
-function isEffectMonster(data?: CompactCard) {
+function isEffectMonster(data?: CompactCard, card?: ZoneCard) {
+  if (card && isTokenNormalMonster(card)) return false;
   if (!data) return false;
-  const t = data.type.toLowerCase();
+  const t = `${data.type} ${data.frameType ?? ""}`.toLowerCase();
+  if (/\btoken\b/.test(t)) return false;
   if (!t.includes("monster")) return false;
   if (/\bnormal\b/.test(t) && !/\beffect\b/.test(t)) return false;
   return true;
@@ -115,7 +118,7 @@ export function conditionOk(
   }
 
   if (/\btarget 1 (?:face-up )?effect monster your opponent controls\b/i.test(full)) {
-    const n = opp.monsters.filter((c) => c?.faceUp && isEffectMonster(byId.get(c.cardId))).length;
+    const n = opp.monsters.filter((c) => c?.faceUp && isEffectMonster(byId.get(c.cardId), c)).length;
     return n > 0
       ? { ok: true, reason: "Opponent has a face-up Effect Monster." }
       : { ok: false, reason: "No face-up Effect Monster to target." };
@@ -154,7 +157,7 @@ export function cardActivationRequirementsOk(
   const opp = state.players[owner === "p1" ? "p2" : "p1"];
 
   if (/\btarget 1 (?:face-up )?effect monster your opponent controls\b/i.test(desc)) {
-    if (!opp.monsters.some((c) => c?.faceUp && isEffectMonster(byId.get(c.cardId)))) {
+    if (!opp.monsters.some((c) => c?.faceUp && isEffectMonster(byId.get(c.cardId), c))) {
       return { ok: false, reason: "No face-up Effect Monster to target." };
     }
   } else if (/\btarget 1 (?:face-up )?monster your opponent controls\b/i.test(desc)) {
